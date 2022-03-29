@@ -19,14 +19,18 @@ class CreateResidenceController extends Controller
         //     'description' => 'required|string|min:10'
         // ]);
 
+
         $residence = new Residence();
         $residence->name = $request->input('name');
         $residence->squaremeters = $request->input('squaremeters');
         $residence->rooms = $request->input('rooms');
-        $residence->residents = $request->input('residents');
         $residence->bathrooms = $request->input('bathrooms');
+        $residence->residents = $request->input('residents');
+        $residence->smoking = $request->input('smoking');
+        $residence->animals = $request->input('animals');
+        $residence->partying = $request->input('partying');
         $residence->save();
 
-        return view('createAccount/stepThree');
+        return back();
     }
 }

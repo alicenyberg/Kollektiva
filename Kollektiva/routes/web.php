@@ -20,11 +20,11 @@ Route::get('/', function () {
 });
 
 //register
-Route::get('/Account', function () {
-    return view('createAccount/stepTwo');
+Route::get('/account', function () {
+    return view('createAccount');
 });
 
 
 Route::post('/createResidence', CreateResidenceController::class);
-Route::post('/stepThree', StepThreeController::class);
+//Route::post('/stepThree', StepThreeController::class);
 
