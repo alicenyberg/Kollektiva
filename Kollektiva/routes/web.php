@@ -23,4 +23,4 @@ Route::get('/Account', function () {
 });
 
 Route::post('/createResidence', CreateResidenceController::class);
-
+Route::post('/StepThree', StepThreeController::class);

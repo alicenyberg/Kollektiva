@@ -27,6 +27,6 @@ class CreateResidenceController extends Controller
         $residence->bathrooms = $request->input('bathrooms');
         $residence->save();
 
-        return back();
+        return view('createAccount/stepThree');
     }
 }

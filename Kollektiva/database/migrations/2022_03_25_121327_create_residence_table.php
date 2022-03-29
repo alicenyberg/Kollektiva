@@ -20,6 +20,9 @@ return new class extends Migration
             $table->integer('rooms');
             $table->integer('bathrooms');
             $table->integer('residents');
+            $table->boolean('smoking')->default(false);
+            $table->boolean('animals')->default(false);
+            $table->boolean('partying')->default(false);
             $table->timestamps();
         });
     }
