@@ -2,7 +2,7 @@
 
  
  
- ## Instalation guide 🌱
+ ## Installation guide 🌱
  
 1. Copy the .env-example into its own .env file and edit the database parameters.
 
