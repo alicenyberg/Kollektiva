@@ -60,6 +60,10 @@
         <button>Next</button>
     </div>
 
+    <div class="stepFour">
+        <input type="file" name="photo">
+    </div>
+
 
 
     <button type="submit">Submit</button>
