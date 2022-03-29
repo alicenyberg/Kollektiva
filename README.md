@@ -11,9 +11,11 @@
  composer udpate
  php artisan key:generate
  php artisan migrate
+ php install
+ php run watch
  ```
 
-3. Finally simply just run 
+3. Finally open another terminal and simply just run 
 ```
 php artisan serve
 ```
