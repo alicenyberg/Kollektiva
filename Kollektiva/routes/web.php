@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CreateResidenceController;
+use App\Http\Controllers\StepThreeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//register
 Route::get('/Account', function () {
     return view('createAccount/stepTwo');
 });
 
+
 Route::post('/createResidence', CreateResidenceController::class);
-Route::post('/StepThree', StepThreeController::class);
+Route::post('/stepThree', StepThreeController::class);
+
