@@ -60,8 +60,11 @@
         <button>Next</button>
     </div>
 
+    @if($errors->any())
+        {{$errors->first()}}
+    @endif
     <div class="stepFour">
-        <input type="file" name="photo">
+        <input type="file" name="picture">
     </div>
 
 

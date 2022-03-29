@@ -15,21 +15,32 @@ class CreateResidenceController extends Controller
      */
     public function __invoke(Request $request)
     {
-        // $this->validate($request, [
-        //     'description' => 'required|string|min:10'
+
+
+        //die(var_dump($request->input('picture')));
+        // $request->validate([
+
+        //     'picture' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
         // ]);
+        //die(var_dump("yes"));
+
+        // $residence = new Residence();
+        // $residence->name = $request->input('name');
+        // $residence->squaremeters = $request->input('squaremeters');
+        // $residence->rooms = $request->input('rooms');
+        // $residence->bathrooms = $request->input('bathrooms');
+        // $residence->residents = $request->input('residents');
+        // $residence->smoking = $request->input('smoking');
+        // $residence->animals = $request->input('animals');
+        // $residence->partying = $request->input('partying');
 
 
-        $residence = new Residence();
-        $residence->name = $request->input('name');
-        $residence->squaremeters = $request->input('squaremeters');
-        $residence->rooms = $request->input('rooms');
-        $residence->bathrooms = $request->input('bathrooms');
-        $residence->residents = $request->input('residents');
-        $residence->smoking = $request->input('smoking');
-        $residence->animals = $request->input('animals');
-        $residence->partying = $request->input('partying');
-        $residence->save();
+
+        $pictureName = time().'.'.$request->picture->extension();
+        die(var_dump($pictureName));
+        $request->picture->move(public_path('uploads'), $pictureName);
+        //$residence->save();
 
         return back();
     }
