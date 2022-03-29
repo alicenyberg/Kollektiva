@@ -16,13 +16,13 @@ class StepThreeController extends Controller
     public function __invoke(Request $request)
     {
 
+        //die(var_dump($request->input('smoking')));
+        $residence = new Residence();
+        $residence->smoking = $request->input('smoking');
+        $residence->animals = $request->input('animals');
+        $residence->partying = $request->input('partying');
+        $residence->save();
 
-        // $residence = new Residence();
-        // $residence->smoking = $request->input('smoking');
-        // $residence->animals = $request->input('animals');
-        // $residence->partying = $request->input('partying');
-        // $residence->save();
-
-        // return view('createAccount/stepThree');
+        return back();
     }
 }
