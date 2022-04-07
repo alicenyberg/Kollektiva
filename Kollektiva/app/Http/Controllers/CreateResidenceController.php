@@ -36,10 +36,9 @@ class CreateResidenceController extends Controller
         // $residence->partying = $request->input('partying');
 
 
-
-        $pictureName = time().'.'.$request->picture->extension();
-        die(var_dump($pictureName));
-        $request->picture->move(public_path('uploads'), $pictureName);
+        $pictureName = time().'.'.$request->picture;
+        //die(var_dump($pictureName));
+        $request->picture->store(public_path('uploads'), $pictureName);
         //$residence->save();
 
         return back();
