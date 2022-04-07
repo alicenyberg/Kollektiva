@@ -61,7 +61,7 @@
     </div>
 
     @if($errors->any())
-        {{$errors->first()}}
+    {{$errors->first()}}
     @endif
     <div class="stepFour">
         <input type="file" name="picture">
@@ -73,3 +73,5 @@
 </form>
 
 <script src="/js/app.js"></script>
+
+@include('/boilerplate/footer')
