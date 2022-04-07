@@ -1,3 +1,44 @@
-body {
-    background-color: red;
+$hello: "pink";
+$primary-purple: #4e0ea1;
+$light-purple: #c8c7ff;
+$primary-font: "Poppins";
+
+.createAccount {
+    width: 100%;
+
+    form {
+    }
+
+    .stepOne {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .bankContianer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        img {
+            width: 80%;
+        }
+
+        h2 {
+            width: 60%;
+            text-align: center;
+        }
+
+        margin-bottom: 50rem;
+    }
+
+    button {
+        border: none;
+        border-radius: 6px;
+        background: $primary-purple;
+        color: white;
+        font-size: 2rem;
+        padding: 1rem;
+    }
 }

@@ -1,7 +1,12 @@
-body {
-    background-color: blue;
-}
+// import google fonts
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
 
-.stepThree {
-    display: none;
+// variables
+$hello: "pink";
+$primary-purple: #4e0ea1;
+$light-purple: #c8c7ff;
+$primary-font: "Poppins";
+
+body {
+    font-family: $primary-font;
 }

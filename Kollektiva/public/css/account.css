@@ -1,2 +1,30 @@
-body {
+.createAccount {
+  width: 100%;
+}
+.createAccount .stepOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50rem;
+}
+.createAccount .stepOne .bankContianer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.createAccount .stepOne img {
+  width: 80%;
+}
+.createAccount .stepOne h2 {
+  width: 60%;
+  text-align: center;
+}
+.createAccount button {
+  border: none;
+  border-radius: 6px;
+  background: #4e0ea1;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
 }
