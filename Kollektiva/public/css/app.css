@@ -1,3 +1,7 @@
+body {
+  background-color: blue;
+}
+
 .stepThree {
-    display: none;
+  display: none;
 }
