@@ -16,14 +16,10 @@ class CreateResidenceController extends Controller
     public function __invoke(Request $request)
     {
 
-
-        //die(var_dump($request->input('picture')));
         // $request->validate([
-
         //     'picture' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-
         // ]);
-        //die(var_dump("yes"));
+        // die(var_dump("yes"));
 
         // $residence = new Residence();
         // $residence->name = $request->input('name');
@@ -36,9 +32,8 @@ class CreateResidenceController extends Controller
         // $residence->partying = $request->input('partying');
 
 
-        $pictureName = time().'.'.$request->picture;
-        //die(var_dump($pictureName));
-        $request->picture->store(public_path('uploads'), $pictureName);
+        $pictureName = time().'.'.$request->image->getClientOriginalName();
+        $request->image->move(public_path('uploads'), $pictureName);
         //$residence->save();
 
         return back();

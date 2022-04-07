@@ -1,8 +1,16 @@
 @include('/boilerplate/header')
-
-<h1>Berätta lite om bostaden</h1>
-
-<form action="createResidence" method="POST">
+<form action="">
+    <h2>Börja med att registrera ditt konto genom verifiering av BankID. </h2>
+    <div>
+        <img src="https://play-lh.googleusercontent.com/bD-qaxBMpWE-o5zM6Hd151pMrW7E_PIHxudRg-k7ty48pdspjzzbsSiiyDy4oUK0nvw" alt="">
+        <button>Öppna BankID</button>
+    </div>
+    <div>
+        <button>Föregående</button>
+        <button type="button" class="nextThree">Nästa</button>
+    </div>
+</form>
+<form action="createResidence" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="stepTwo">
         <input type="text" name="name">
@@ -64,12 +72,13 @@
         {{$errors->first()}}
     @endif
     <div class="stepFour">
-        <input type="file" name="picture">
+        <p>Image</p>
+        <input type="file" name="image">
+        <button type="submit">Submit</button>
     </div>
 
 
 
-    <button type="submit">Submit</button>
 </form>
 
 <script src="/js/app.js"></script>
