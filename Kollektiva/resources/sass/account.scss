@@ -30,6 +30,18 @@ $primary-font: "Poppins";
             text-align: center;
         }
 
+        .pageNav {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+
+            .next {
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
         margin-bottom: 50rem;
     }
 

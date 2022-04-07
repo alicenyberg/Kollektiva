@@ -8,12 +8,17 @@
         </div>
         <div class="pageNav">
             <div>
-                <button>
+                <button type="button" class="back">
                     <img src="{{ asset('assets/svg/Vector.svg') }}">
                 </button>
                 <p>Föregående</p>
             </div>
-            <button type="button" class="nextThree">Nästa</button>
+            <div>
+                <button class="next" class="nextThree">
+                    <img src="{{ asset('assets/svg/Vector.svg') }}">
+                </button>
+                <p>Nästa</p>
+            </div>
         </div>
     </form>
     <form action="createResidence" method="POST" enctype="multipart/form-data">

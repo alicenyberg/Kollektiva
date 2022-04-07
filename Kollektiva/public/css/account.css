@@ -20,6 +20,14 @@
   width: 60%;
   text-align: center;
 }
+.createAccount .stepOne .pageNav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.createAccount .stepOne .pageNav .next img {
+  transform: rotate(180deg);
+}
 .createAccount button {
   border: none;
   border-radius: 6px;
