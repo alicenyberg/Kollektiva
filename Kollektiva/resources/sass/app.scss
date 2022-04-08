@@ -7,13 +7,14 @@ $primary-purple: #4e0ea1;
 $light-purple: #c8c7ff;
 $primary-font: "Poppins";
 
-body {
-    background-color: $hello;
-    margin: 0;
+
+* {
+    box-sizing: border-box;
+
 }
 
-.stepThree {
-    display: none;
+body {
+    font-family: $primary-font;
 }
 
 // nav-styling

@@ -1,64 +1,94 @@
 @include('/boilerplate/header')
-
-<h1>Berätta lite om bostaden</h1>
-
-<form action="createResidence" method="POST">
-    @csrf
-    <div class="stepTwo">
-        <input type="text" name="name">
-        <input type="number" name="squaremeters">
-        <input type="number" name="rooms">
-        <input type="number" name="residents">
-        <input type="number" name="bathrooms">
-        <button type="button" class="nextThree">Next</button>
+<section class="createAccount">
+    <div class="pageCounter">
+        <p>Steg 1 av 5</p>
+        <ul>
+            <div class="line"></div>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
-
-    <div class="stepThree">
-        <h1>Steg 3</h1>
-
-        <div>
+    <form action="" class="stepOne">
+        <h2>Börja med att registrera ditt konto genom verifiering av BankID. </h2>
+        <div class="bankContianer">
+            <img src="https://play-lh.googleusercontent.com/bD-qaxBMpWE-o5zM6Hd151pMrW7E_PIHxudRg-k7ty48pdspjzzbsSiiyDy4oUK0nvw" alt="">
+            <button>Öppna BankID</button>
+        </div>
+        <div class="pageNav">
             <div>
-                <input type="radio" name="smoking" value="false">
-                <p>Nej</p>
+                <button type="button" class="back">
+                    <img src="{{ asset('assets/svg/Vector.svg') }}">
+                </button>
+                <p>Föregående</p>
             </div>
-
-            <p>Somking?</p>
-
             <div>
-                <input type="radio" name="smoking" value="true">
-                <p>Ja</p>
+                <button class="next" class="nextThree">
+                    <img src="{{ asset('assets/svg/Vector.svg') }}">
+                </button>
+                <p>Nästa</p>
             </div>
         </div>
-
-        <div>
-            <div>
-                <input type="radio" name="animals" value="false">
-                <p>Nej</p>
-            </div>
-
-            <p>Animals?</p>
-
-            <div>
-                <input type="radio" name="animals" value="true">
-                <p>Ja</p>
-            </div>
+    </form>
+    <form action="createResidence" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="stepTwo">
+            <input type="text" name="name">
+            <input type="number" name="squaremeters">
+            <input type="number" name="rooms">
+            <input type="number" name="residents">
+            <input type="number" name="bathrooms">
+            <button type="button" class="nextThree">Next</button>
         </div>
 
-        <div>
-            <div>
-                <input type="radio" name="partying" value="false">
-                <p>Nej</p>
-            </div>
-
-            <p>Partying?</p>
+        <div class="stepThree">
+            <h1>Steg 3</h1>
 
             <div>
-                <input type="radio" name="partying" value="true">
-                <p>Ja</p>
+                <div>
+                    <input type="radio" name="smoking" value="false">
+                    <p>Nej</p>
+                </div>
+
+                <p>Somking?</p>
+
+                <div>
+                    <input type="radio" name="smoking" value="true">
+                    <p>Ja</p>
+                </div>
             </div>
+
+            <div>
+                <div>
+                    <input type="radio" name="animals" value="false">
+                    <p>Nej</p>
+                </div>
+
+                <p>Animals?</p>
+
+                <div>
+                    <input type="radio" name="animals" value="true">
+                    <p>Ja</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <input type="radio" name="partying" value="false">
+                    <p>Nej</p>
+                </div>
+
+                <p>Partying?</p>
+
+                <div>
+                    <input type="radio" name="partying" value="true">
+                    <p>Ja</p>
+                </div>
+            </div>
+            <button>Next</button>
         </div>
-        <button>Next</button>
-    </div>
 
     @if($errors->any())
     {{$errors->first()}}
@@ -69,8 +99,8 @@
 
 
 
-    <button type="submit">Submit</button>
-</form>
+    </form>
+</section>
 
 <script src="/js/app.js"></script>
 

@@ -17,11 +17,8 @@ class CreateResidenceController extends Controller
     {
 
 
-        // die(var_dump($request->input('picture')));
         // $request->validate([
-
         //     'picture' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-
         // ]);
         // die(var_dump("yes"));
 
@@ -37,10 +34,10 @@ class CreateResidenceController extends Controller
 
 
 
-        // $pictureName = time().'.'.$request->picture->extension();
-        // die(var_dump($pictureName));
-        // $request->picture->move(public_path('uploads'), $pictureName);
-        $residence->save();
+        $pictureName = time().'.'.$request->image->getClientOriginalName();
+        $request->image->move(public_path('uploads'), $pictureName);
+        //$residence->save();
+
 
         return back();
     }
