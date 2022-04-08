@@ -25,4 +25,5 @@ mix.js("resources/js/app.js", "public/js").sass(
     "public/css"
 );
 
+mix.sass("resources/sass/start.scss", "public/css");
 mix.sass("resources/sass/account.scss", "public/css");
