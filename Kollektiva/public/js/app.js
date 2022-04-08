@@ -2164,13 +2164,38 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var nextThree = document.querySelector(".nextThree");
-var stepTwo = document.querySelector(".stepTwo");
-var stepThree = document.querySelector(".stepThree");
-nextThree.addEventListener("click", function () {
-  console.log("click");
-  stepTwo.style.display = "none";
-  stepThree.style.display = "block";
+var steps = document.querySelectorAll(".steps");
+var buttons = document.querySelectorAll(".next");
+var pageCounts = document.querySelectorAll(".pageCounter > ul > li");
+var stepCount = 0;
+steps.forEach(function (step) {
+  step.dataset.step = stepCount;
+  stepCount++;
+  console.log(step.dataset.step);
+});
+steps[1].style.display = "none";
+steps[2].style.display = "none";
+steps[3].style.display = "none";
+var pageCounter = 0;
+pageCounts.forEach(function (page) {
+  page.dataset.step = pageCounter;
+  pageCounter++;
+  console.log(page.dataset.step);
+});
+var buttonCount = 0;
+buttons.forEach(function (button) {
+  button.dataset.step = buttonCount;
+  buttonCount++;
+  console.log(button.dataset.step);
+  button.addEventListener("click", function () {
+    console.log("click");
+    var next = parseInt(button.dataset.step) + 1;
+    console.log(button.dataset.step);
+    console.log(next);
+    steps[button.dataset.step].style.display = "none";
+    steps[next].style.display = "block";
+    pageCounts[button.dataset.step].style.background = "black";
+  });
 });
 
 /***/ }),

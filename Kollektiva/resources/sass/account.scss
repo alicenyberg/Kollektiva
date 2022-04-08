@@ -11,7 +11,6 @@ $primary-font: "Poppins";
     justify-content: center;
     align-items: center;
     .pageCounter {
-
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -42,16 +41,13 @@ $primary-font: "Poppins";
                 background: $light-purple;
                 list-style: none;
             }
-
-
-
         }
     }
 
     form {
     }
 
-    .stepOne {
+    .steps {
         display: flex;
         flex-direction: column;
         align-items: center;

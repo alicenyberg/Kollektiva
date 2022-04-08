@@ -35,31 +35,31 @@
   background: #c8c7ff;
   list-style: none;
 }
-.createAccount .stepOne {
+.createAccount .steps {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50rem;
 }
-.createAccount .stepOne .bankContianer {
+.createAccount .steps .bankContianer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
 }
-.createAccount .stepOne img {
+.createAccount .steps img {
   width: 80%;
 }
-.createAccount .stepOne h2 {
+.createAccount .steps h2 {
   width: 80%;
   text-align: center;
 }
-.createAccount .stepOne .pageNav {
+.createAccount .steps .pageNav {
   width: 50%;
   display: flex;
   justify-content: space-between;
 }
-.createAccount .stepOne .pageNav .next img {
+.createAccount .steps .pageNav .next img {
   transform: rotate(180deg);
 }
 .createAccount button {

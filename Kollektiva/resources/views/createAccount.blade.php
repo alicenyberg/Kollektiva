@@ -11,39 +11,41 @@
             <li></li>
         </ul>
     </div>
-    <form action="" class="stepOne">
-        <h2>Börja med att registrera ditt konto genom verifiering av BankID. </h2>
-        <div class="bankContianer">
-            <img src="https://play-lh.googleusercontent.com/bD-qaxBMpWE-o5zM6Hd151pMrW7E_PIHxudRg-k7ty48pdspjzzbsSiiyDy4oUK0nvw" alt="">
-            <button>Öppna BankID</button>
-        </div>
-        <div class="pageNav">
-            <div>
-                <button type="button" class="back">
-                    <img src="{{ asset('assets/svg/Vector.svg') }}">
-                </button>
-                <p>Föregående</p>
-            </div>
-            <div>
-                <button class="next" class="nextThree">
-                    <img src="{{ asset('assets/svg/Vector.svg') }}">
-                </button>
-                <p>Nästa</p>
-            </div>
-        </div>
-    </form>
     <form action="createResidence" method="POST" enctype="multipart/form-data">
-        @csrf
-        <div class="stepTwo">
+    @csrf
+        <div class="steps">
+            <h2>Börja med att registrera ditt konto genom verifiering av BankID. </h2>
+            <div class="bankContianer">
+                <img src="https://play-lh.googleusercontent.com/bD-qaxBMpWE-o5zM6Hd151pMrW7E_PIHxudRg-k7ty48pdspjzzbsSiiyDy4oUK0nvw" alt="">
+                <button>Öppna BankID</button>
+            </div>
+            <div class="pageNav">
+                <div>
+                    <button type="button" class="back">
+                        <img src="{{ asset('assets/svg/Vector.svg') }}">
+                    </button>
+                    <p>Föregående</p>
+                </div>
+                <div>
+                    <button class="next" type="button">
+                        <img src="{{ asset('assets/svg/Vector.svg') }}">
+                    </button>
+                    <p>Nästa</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="steps">
             <input type="text" name="name">
             <input type="number" name="squaremeters">
             <input type="number" name="rooms">
             <input type="number" name="residents">
             <input type="number" name="bathrooms">
-            <button type="button" class="nextThree">Next</button>
+
+            <button class="next" type="button">Next</button>
         </div>
 
-        <div class="stepThree">
+        <div class="steps">
             <h1>Steg 3</h1>
 
             <div>
@@ -87,13 +89,13 @@
                     <p>Ja</p>
                 </div>
             </div>
-            <button>Next</button>
+            <button class="next">Next</button>
         </div>
 
-    @if($errors->any())
-    {{$errors->first()}}
-    @endif
-    <div class="stepFour">
+    <div class="steps">
+        @if($errors->any())
+        {{$errors->first()}}
+        @endif
         <input type="file" name="picture">
     </div>
 

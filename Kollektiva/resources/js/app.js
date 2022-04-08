@@ -1,11 +1,40 @@
 require("./bootstrap");
 
-const nextThree = document.querySelector(".nextThree");
-const stepTwo = document.querySelector(".stepTwo");
-const stepThree = document.querySelector(".stepThree");
+const steps = document.querySelectorAll(".steps");
+const buttons = document.querySelectorAll(".next");
+const pageCounts = document.querySelectorAll(".pageCounter > ul > li");
 
-nextThree.addEventListener("click", () => {
-    console.log("click");
-    stepTwo.style.display = "none";
-    stepThree.style.display = "block";
+let stepCount = 0;
+steps.forEach((step) => {
+    step.dataset.step = stepCount;
+    stepCount++;
+    console.log(step.dataset.step);
+});
+steps[1].style.display = "none";
+steps[2].style.display = "none";
+steps[3].style.display = "none";
+
+let pageCounter = 0;
+pageCounts.forEach((page) => {
+    page.dataset.step = pageCounter;
+    pageCounter++;
+    console.log(page.dataset.step);
+});
+
+let buttonCount = 0;
+buttons.forEach((button) => {
+    button.dataset.step = buttonCount;
+    buttonCount++;
+    console.log(button.dataset.step);
+
+    button.addEventListener("click", () => {
+        console.log("click");
+        let next = parseInt(button.dataset.step) + 1;
+        console.log(button.dataset.step);
+        console.log(next);
+        steps[button.dataset.step].style.display = "none";
+        steps[next].style.display = "block";
+
+        pageCounts[button.dataset.step].style.background = "black";
+    });
 });
