@@ -34,10 +34,6 @@ h1 {
     align-items: center;
 }
 
-.navbar .menu-items {
-    display: flex;
-}
-
 h2 {
     color: $primary-purple;
     font-family: $primary-font;
@@ -64,4 +60,31 @@ button {
     display: grid;
     grid-row-start: 1;
     margin-left: 2%;
+}
+
+.guide-container {
+    display: grid;
+    grid-template-columns: 1fr (2fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.circles {
+    border-radius: 50%;
+    background-color: $primary-purple;
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+hr {
+    transform: rotate(180deg);
+    border-style: inset;
+    border-width: 1px;
+    background-color: $primary-purple;
+}
+
+li {
+    list-style: none;
+    font-size: 15px;
 }
