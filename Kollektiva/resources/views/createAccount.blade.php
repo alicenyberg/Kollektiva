@@ -1,5 +1,16 @@
 @include('/boilerplate/header')
 <section class="createAccount">
+    <div class="pageCounter">
+        <p>Steg 1 av 5</p>
+        <ul>
+            <div class="line"></div>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
     <form action="" class="stepOne">
         <h2>Börja med att registrera ditt konto genom verifiering av BankID. </h2>
         <div class="bankContianer">

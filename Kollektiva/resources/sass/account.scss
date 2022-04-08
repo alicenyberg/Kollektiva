@@ -6,6 +6,48 @@ $primary-font: "Poppins";
 .createAccount {
     width: 100%;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .pageCounter {
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .line {
+            width: 100%;
+            height: 3px;
+            background: #b6b5fc;
+
+            position: absolute;
+            top: 85%;
+            z-index: -1;
+        }
+
+        ul {
+            width: 100%;
+            margin: 0rem;
+            padding: 0rem;
+            display: flex;
+            justify-content: space-between;
+            li {
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+
+                background: $light-purple;
+                list-style: none;
+            }
+
+
+
+        }
+    }
+
     form {
     }
 
@@ -26,7 +68,7 @@ $primary-font: "Poppins";
         }
 
         h2 {
-            width: 60%;
+            width: 80%;
             text-align: center;
         }
 

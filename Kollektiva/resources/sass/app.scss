@@ -7,6 +7,10 @@ $primary-purple: #4e0ea1;
 $light-purple: #c8c7ff;
 $primary-font: "Poppins";
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: $primary-font;
 }
