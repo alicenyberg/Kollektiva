@@ -24,7 +24,10 @@ Route::get('/account', function () {
     return view('createAccount');
 });
 
+//start
+Route::get('/start', function () {
+    return view('start');
+});
 
 Route::post('/createResidence', CreateResidenceController::class);
 //Route::post('/stepThree', StepThreeController::class);
-

@@ -90,14 +90,12 @@
             <button>Next</button>
         </div>
 
-        @if($errors->any())
-            {{$errors->first()}}
-        @endif
-        <div class="stepFour">
-            <p>Image</p>
-            <input type="file" name="image">
-            <button type="submit">Submit</button>
-        </div>
+    @if($errors->any())
+    {{$errors->first()}}
+    @endif
+    <div class="stepFour">
+        <input type="file" name="picture">
+    </div>
 
 
 
@@ -105,3 +103,5 @@
 </section>
 
 <script src="/js/app.js"></script>
+
+@include('/boilerplate/footer')
