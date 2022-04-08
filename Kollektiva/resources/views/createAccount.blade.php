@@ -1,7 +1,8 @@
 @include('/boilerplate/header')
 <section class="createAccount">
     <div class="pageCounter">
-        <p>Steg 1 av 5</p>
+        <p>Steg <span></span> av 5</p>
+
         <ul>
             <div class="line"></div>
             <li></li>
@@ -13,6 +14,21 @@
     </div>
     <form action="createResidence" method="POST" enctype="multipart/form-data">
     @csrf
+
+    <div class="steps">
+            <h2>Berätta lite om bostaden</h2>
+            <input class="range" type="range" name="squaremeters">
+            <input class="range" type="range" name="rent">
+
+            <!--
+                <input type="text" name="name">
+                <input type="number" name="rooms">
+            <input type="number" name="residents">
+            <input type="number" name="bathrooms"> -->
+
+            <button class="next" type="button">Next</button>
+        </div>
+
         <div class="steps">
             <h2>Börja med att registrera ditt konto genom verifiering av BankID. </h2>
             <div class="bankContianer">
@@ -35,15 +51,7 @@
             </div>
         </div>
 
-        <div class="steps">
-            <input type="text" name="name">
-            <input type="number" name="squaremeters">
-            <input type="number" name="rooms">
-            <input type="number" name="residents">
-            <input type="number" name="bathrooms">
 
-            <button class="next" type="button">Next</button>
-        </div>
 
         <div class="steps">
             <h1>Steg 3</h1>
@@ -89,7 +97,7 @@
                     <p>Ja</p>
                 </div>
             </div>
-            <button class="next">Next</button>
+            <button class="next" type="button">Next</button>
         </div>
 
     <div class="steps">

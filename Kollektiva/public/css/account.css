@@ -39,13 +39,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50rem;
 }
 .createAccount .steps .bankContianer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .createAccount .steps img {
   width: 80%;
@@ -53,6 +52,10 @@
 .createAccount .steps h2 {
   width: 80%;
   text-align: center;
+}
+.createAccount .steps .range {
+  background: black;
+  border: black 2px solid;
 }
 .createAccount .steps .pageNav {
   width: 50%;

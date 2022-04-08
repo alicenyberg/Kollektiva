@@ -56,7 +56,7 @@ $primary-font: "Poppins";
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 4rem;
+            margin-bottom: 1rem;
         }
 
         img {
@@ -66,6 +66,11 @@ $primary-font: "Poppins";
         h2 {
             width: 80%;
             text-align: center;
+        }
+
+        .range {
+            background: black;
+            border: black 2px solid;
         }
 
         .pageNav {
@@ -79,8 +84,6 @@ $primary-font: "Poppins";
                 }
             }
         }
-
-        margin-bottom: 50rem;
     }
 
     button {

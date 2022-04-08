@@ -3,6 +3,10 @@ require("./bootstrap");
 const steps = document.querySelectorAll(".steps");
 const buttons = document.querySelectorAll(".next");
 const pageCounts = document.querySelectorAll(".pageCounter > ul > li");
+const displayCurrent = document.querySelector(".pageCounter > p > span ");
+
+let currentStep = 1;
+displayCurrent.innerHTML = currentStep;
 
 let stepCount = 0;
 steps.forEach((step) => {
@@ -29,12 +33,15 @@ buttons.forEach((button) => {
 
     button.addEventListener("click", () => {
         console.log("click");
+        currentStep++;
+        displayCurrent.innerHTML = currentStep;
+
         let next = parseInt(button.dataset.step) + 1;
         console.log(button.dataset.step);
         console.log(next);
         steps[button.dataset.step].style.display = "none";
-        steps[next].style.display = "block";
+        steps[next].style.display = "flex";
 
-        pageCounts[button.dataset.step].style.background = "black";
+        pageCounts[button.dataset.step].style.background = "pink";
     });
 });

@@ -2167,6 +2167,9 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var steps = document.querySelectorAll(".steps");
 var buttons = document.querySelectorAll(".next");
 var pageCounts = document.querySelectorAll(".pageCounter > ul > li");
+var displayCurrent = document.querySelector(".pageCounter > p > span ");
+var currentStep = 1;
+displayCurrent.innerHTML = currentStep;
 var stepCount = 0;
 steps.forEach(function (step) {
   step.dataset.step = stepCount;
@@ -2189,12 +2192,14 @@ buttons.forEach(function (button) {
   console.log(button.dataset.step);
   button.addEventListener("click", function () {
     console.log("click");
+    currentStep++;
+    displayCurrent.innerHTML = currentStep;
     var next = parseInt(button.dataset.step) + 1;
     console.log(button.dataset.step);
     console.log(next);
     steps[button.dataset.step].style.display = "none";
-    steps[next].style.display = "block";
-    pageCounts[button.dataset.step].style.background = "black";
+    steps[next].style.display = "flex";
+    pageCounts[button.dataset.step].style.background = "pink";
   });
 });
 
