@@ -1,9 +1,90 @@
+// import google fonts
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
+
+// variables
 $hello: "pink";
+$primary-purple: #4e0ea1;
+$light-purple: #c8c7ff;
+$primary-font: "Poppins";
 
 body {
     background-color: $hello;
+    margin: 0;
 }
 
 .stepThree {
     display: none;
+}
+
+// nav-styling
+
+h1 {
+    color: $primary-purple;
+    font-family: $primary-font;
+    margin-top: 0;
+    padding-top: 10%;
+    padding-left: 4%;
+}
+
+.nav-container {
+    height: 4rem;
+    background-color: $light-purple;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: $primary-purple;
+    font-family: $primary-font;
+    text-align: center;
+}
+
+p {
+    font-family: $primary-font;
+    font-size: 1rem;
+    padding-left: 2%;
+}
+
+button {
+    background-color: $primary-purple;
+    color: white;
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    padding: 3%;
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    border: none;
+    display: grid;
+    grid-row-start: 1;
+    margin-left: 2%;
+}
+
+.guide-container {
+    display: grid;
+    grid-template-columns: 1fr (2fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.circles {
+    border-radius: 50%;
+    background-color: $primary-purple;
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+hr {
+    transform: rotate(180deg);
+    border-style: inset;
+    border-width: 1px;
+    background-color: $primary-purple;
+}
+
+li {
+    list-style: none;
+    font-size: 15px;
 }
