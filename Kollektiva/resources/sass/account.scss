@@ -1,7 +1,4 @@
-$hello: "pink";
-$primary-purple: #4e0ea1;
-$light-purple: #c8c7ff;
-$primary-font: "Poppins";
+@import "app";
 
 .createAccount {
     width: 100%;
@@ -38,7 +35,7 @@ $primary-font: "Poppins";
                 height: 20px;
                 border-radius: 100%;
 
-                background: $light-purple;
+                //background: $light-purple;
                 list-style: none;
             }
         }

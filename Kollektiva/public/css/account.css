@@ -1,3 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
 .createAccount {
   width: 100%;
   display: flex;
@@ -32,7 +41,6 @@
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background: #c8c7ff;
   list-style: none;
 }
 .createAccount .steps {
