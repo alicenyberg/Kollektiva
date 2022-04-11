@@ -61,9 +61,44 @@ body {
   width: 80%;
   text-align: center;
 }
-.createAccount .steps .range {
-  background: black;
-  border: black 2px solid;
+.createAccount .steps .rangeContainer {
+  padding: 1rem;
+  border: #c8c7ff 5px solid;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.createAccount .steps input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  height: 10px;
+  background: #c8c7ff;
+  /* Otherwise white in Chrome */
+  border-radius: 5rem;
+}
+.createAccount .steps input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.createAccount .steps input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+.createAccount .steps input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.createAccount .steps .radioContainer {
+  padding: 1rem;
+  border: #c8c7ff 5px solid;
+  border-radius: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 .createAccount .steps .pageNav {
   width: 50%;
