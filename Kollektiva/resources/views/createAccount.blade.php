@@ -18,7 +18,7 @@
             <h2>Berätta lite om bostaden</h2>
             <h3 class="rangeMeter">0</h3>
             <div class="rangeContainer">
-                <input class="range" id="slider" type="range" min="0" max="100" name="squaremeters">
+                <input class="range" id="slider" type="range" value="0" min="0" max="100" name="squaremeters">
             </div>
             <div class="rangeContainer">
                 <input class="range" type="range" name="rent">

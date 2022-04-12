@@ -2212,6 +2212,10 @@ inputRange.textContent = "uwu";
 inputRange.addEventListener("input", function () {
   rangeMeter.textContent = inputRange.value;
   console.log(inputRange.value);
+
+  if (inputRange.value >= 100) {
+    rangeMeter.textContent = "100+ max";
+  }
 });
 
 /***/ }),
