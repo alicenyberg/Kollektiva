@@ -1,3 +1,5 @@
+const { range } = require("lodash");
+
 require("./bootstrap");
 
 const steps = document.querySelectorAll(".steps");
@@ -53,4 +55,19 @@ const navBar = document.querySelector(".navbar");
 
 hamburgerIcon.addEventListener("click", () => {
     navBar.classList.toggle("close");
+});
+
+const inputRange = document.getElementById("slider");
+const rangeMeter = document.querySelector(".rangeMeter");
+
+rangeMeter.textContent = inputRange.value;
+
+inputRange.textContent = "uwu";
+inputRange.addEventListener("input", () => {
+    rangeMeter.textContent = inputRange.value;
+    console.log(inputRange.value);
+
+    if (inputRange.value >= 100) {
+        rangeMeter.textContent = "100+ max";
+    }
 });

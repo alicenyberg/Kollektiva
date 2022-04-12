@@ -2162,6 +2162,9 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+var _require = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js"),
+    range = _require.range;
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 var steps = document.querySelectorAll(".steps");
@@ -2207,6 +2210,18 @@ var hamburgerIcon = document.querySelector(".hamburger");
 var navBar = document.querySelector(".navbar");
 hamburgerIcon.addEventListener("click", function () {
   navBar.classList.toggle("close");
+});
+var inputRange = document.getElementById("slider");
+var rangeMeter = document.querySelector(".rangeMeter");
+rangeMeter.textContent = inputRange.value;
+inputRange.textContent = "uwu";
+inputRange.addEventListener("input", function () {
+  rangeMeter.textContent = inputRange.value;
+  console.log(inputRange.value);
+
+  if (inputRange.value >= 100) {
+    rangeMeter.textContent = "100+ max";
+  }
 });
 
 /***/ }),
