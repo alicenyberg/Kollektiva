@@ -55,7 +55,10 @@ const navBar = document.querySelector(".navbar");
 
 hamburgerIcon.addEventListener("click", () => {
     navBar.classList.toggle("close");
+    console.log("hellio");
 });
+
+//input
 
 const inputRange = document.getElementById("slider");
 const rangeMeter = document.querySelector(".rangeMeter");

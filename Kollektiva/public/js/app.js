@@ -2210,7 +2210,9 @@ var hamburgerIcon = document.querySelector(".hamburger");
 var navBar = document.querySelector(".navbar");
 hamburgerIcon.addEventListener("click", function () {
   navBar.classList.toggle("close");
-});
+  console.log("hellio");
+}); //input
+
 var inputRange = document.getElementById("slider");
 var rangeMeter = document.querySelector(".rangeMeter");
 rangeMeter.textContent = inputRange.value;
