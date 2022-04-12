@@ -9,6 +9,7 @@ $primary-font: "Poppins";
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -16,3 +17,64 @@ body {
 }
 
 // nav-styling
+.menu {
+    width: 100%;
+    height: 100vh;
+    background-color: $light-purple;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    background-color: $light-purple;
+    top: 0;
+    right: -200px;
+    position: fixed;
+}
+
+.close {
+    right: 0;
+}
+
+.nav-list {
+    text-align: center;
+}
+
+.nav-item {
+    margin: 1rem;
+    font-size: 25px;
+    list-style: none;
+}
+
+.hamburger {
+    height: 25px;
+    width: 30px;
+    top: 50px;
+    right: 50px;
+    position: fixed;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
+
+.close .hamburger-line-1 {
+    transform: translateY(7px) rotateZ(45deg);
+}
+
+.close .hamburger-line-2 {
+    opacity: 0;
+}
+
+.close .hamburger-line-3 {
+    transform: translateY(-9px) rotateZ(-45deg);
+}

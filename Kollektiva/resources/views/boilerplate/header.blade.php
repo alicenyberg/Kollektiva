@@ -12,6 +12,19 @@
 </head>
 
 <body>
-    <nav class="nav-container">
-        <h1>Kollektiva.se</h1>
-    </nav>
+
+    <div class="menu">
+        <nav class="navbar">
+            <div class="hamburger">
+                <div class="hamburger-line .hamburger-line-1"></div>
+                <div class="hamburger-line .hamburger-line-2"></div>
+                <div class="hamburger-line .hamburger-line-3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">MENY 1</li>
+                <li class="nav-item">MENY 2</li>
+                <li class="nav-item">MENY 3</li>
+            </ul>
+        </nav>
+    </div>
+    <script src="/js/app.js"></script>

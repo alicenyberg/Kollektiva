@@ -2201,6 +2201,12 @@ buttons.forEach(function (button) {
     steps[next].style.display = "flex";
     pageCounts[button.dataset.step].style.background = "pink";
   });
+}); // hamburger
+
+var hamburgerIcon = document.querySelector(".hamburger");
+var navBar = document.querySelector(".navbar");
+hamburgerIcon.addEventListener("click", function () {
+  navBar.classList.toggle("close");
 });
 
 /***/ }),

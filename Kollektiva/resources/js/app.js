@@ -45,3 +45,12 @@ buttons.forEach((button) => {
         pageCounts[button.dataset.step].style.background = "pink";
     });
 });
+
+// hamburger
+
+const hamburgerIcon = document.querySelector(".hamburger");
+const navBar = document.querySelector(".navbar");
+
+hamburgerIcon.addEventListener("click", () => {
+    navBar.classList.toggle("close");
+});
