@@ -2162,6 +2162,9 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+var _require = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js"),
+    range = _require.range;
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 var steps = document.querySelectorAll(".steps");
@@ -2201,6 +2204,14 @@ buttons.forEach(function (button) {
     steps[next].style.display = "flex";
     pageCounts[button.dataset.step].style.background = "pink";
   });
+});
+var inputRange = document.getElementById("slider");
+var rangeMeter = document.querySelector(".rangeMeter");
+rangeMeter.textContent = inputRange.value;
+inputRange.textContent = "uwu";
+inputRange.addEventListener("input", function () {
+  rangeMeter.textContent = inputRange.value;
+  console.log(inputRange.value);
 });
 
 /***/ }),

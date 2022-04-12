@@ -1,3 +1,5 @@
+const { range } = require("lodash");
+
 require("./bootstrap");
 
 const steps = document.querySelectorAll(".steps");
@@ -44,4 +46,15 @@ buttons.forEach((button) => {
 
         pageCounts[button.dataset.step].style.background = "pink";
     });
+});
+
+const inputRange = document.getElementById("slider");
+const rangeMeter = document.querySelector(".rangeMeter");
+
+rangeMeter.textContent = inputRange.value;
+
+inputRange.textContent = "uwu";
+inputRange.addEventListener("input", () => {
+    rangeMeter.textContent = inputRange.value;
+    console.log(inputRange.value);
 });
