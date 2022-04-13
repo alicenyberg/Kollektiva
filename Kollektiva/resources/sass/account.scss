@@ -9,6 +9,7 @@
     align-items: center;
     .pageCounter {
         width: 50%;
+        height: 6rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,7 +21,7 @@
             background: #b6b5fc;
 
             position: absolute;
-            top: 85%;
+            top: 62%;
             z-index: -1;
         }
 
@@ -28,6 +29,7 @@
             width: 100%;
             margin: 0rem;
             padding: 0rem;
+            margin: 1rem;
             display: flex;
             justify-content: space-between;
             li {
@@ -35,7 +37,7 @@
                 height: 20px;
                 border-radius: 100%;
 
-                //background: $light-purple;
+                background: $light-purple;
                 list-style: none;
             }
         }
@@ -72,6 +74,10 @@
             border: $light-purple 5px solid;
             border-radius: 1rem;
             margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         input[type="range"] {

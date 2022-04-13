@@ -80,6 +80,7 @@ body {
 }
 .createAccount .pageCounter {
   width: 50%;
+  height: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,13 +92,14 @@ body {
   height: 3px;
   background: #b6b5fc;
   position: absolute;
-  top: 85%;
+  top: 62%;
   z-index: -1;
 }
 .createAccount .pageCounter ul {
   width: 100%;
   margin: 0rem;
   padding: 0rem;
+  margin: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -105,6 +107,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 100%;
+  background: #c8c7ff;
   list-style: none;
 }
 .createAccount .steps {
@@ -130,6 +133,10 @@ body {
   border: #c8c7ff 5px solid;
   border-radius: 1rem;
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .createAccount .steps input[type=range] {
   -webkit-appearance: none;

@@ -2202,7 +2202,7 @@ buttons.forEach(function (button) {
     console.log(next);
     steps[button.dataset.step].style.display = "none";
     steps[next].style.display = "flex";
-    pageCounts[button.dataset.step].style.background = "pink";
+    pageCounts[button.dataset.step].style.background = "#4e0ea1";
   });
 }); // hamburger
 

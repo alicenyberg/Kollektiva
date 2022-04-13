@@ -16,8 +16,8 @@
     @csrf
     <div class="steps">
             <h2>Berätta lite om bostaden</h2>
-            <h3 class="rangeMeter">0</h3>
             <div class="rangeContainer">
+                <h3 class="rangeMeter">0</h3>
                 <input class="range" id="slider" type="range" value="0" min="0" max="100" name="squaremeters">
             </div>
             <div class="rangeContainer">
