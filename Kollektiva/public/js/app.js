@@ -2182,7 +2182,8 @@ steps.forEach(function (step) {
 steps[1].style.display = "none";
 steps[2].style.display = "none";
 steps[3].style.display = "none";
-var pageCounter = 0;
+var pageCounter = 1;
+pageCounts[0].style.background = "#4e0ea1";
 pageCounts.forEach(function (page) {
   page.dataset.step = pageCounter;
   pageCounter++;

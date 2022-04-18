@@ -37,12 +37,12 @@
         </div>
 
         <div class="radioContainer">
-            <p>Hur många rum kan bo där?</p>
+            <p>Hur många kan bo där?</p>
 
             <section>
                 <?php for ($i=1; $i < 7; $i++): ?>
-                    <input id="<?= "rooms" . $i ?>" type="radio" name="rooms" value="<?= $i ?>">
-                    <label class="radioButton" for="<?= "rooms" . $i ?>">
+                    <input id="<?= "residents" . $i ?>" type="radio" name="residents" value="<?= $i ?>">
+                    <label class="radioButton" for="<?= "residents" . $i ?>">
                         <p>
                             <?php
                                 if ($i == 6) {

@@ -20,7 +20,8 @@ steps[1].style.display = "none";
 steps[2].style.display = "none";
 steps[3].style.display = "none";
 
-let pageCounter = 0;
+let pageCounter = 1;
+pageCounts[0].style.background = "#4e0ea1";
 pageCounts.forEach((page) => {
     page.dataset.step = pageCounter;
     pageCounter++;
