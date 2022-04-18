@@ -88,7 +88,6 @@ h1 {
 }
 
 h2 {
-  color: #4e0ea1;
   font-family: "Poppins";
   text-align: center;
 }
@@ -115,19 +114,58 @@ button {
   margin-left: 2%;
 }
 
-.guide-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  align-items: center;
+.how-to-section {
+  height: 100vh;
 }
-
-.circles {
-  border-radius: 50%;
-  background-color: #4e0ea1;
-  width: 2.7rem;
-  height: 2.7rem;
+.how-to-section .how-to {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.how-to-section .how-to .how-to-wrapper {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.how-to-section .how-to .how-to-wrapper .circle {
+  width: 55px;
+  height: 55px;
+  background: #4e0ea1;
+  border-radius: 100px;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+.how-to-section .how-to .how-to-wrapper h3 {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #fff;
+}
+.how-to-section .how-to .how-to-wrapper .vertical-line {
+  width: 2px;
+  height: 60px;
+  background: #c8c7ff;
+  margin: 0 auto 0 auto;
+}
+.how-to-section .how-to .how-to-steps {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 66%;
+}
+.how-to-section .register-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer {
