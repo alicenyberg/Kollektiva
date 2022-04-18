@@ -108,27 +108,39 @@
         }
 
         .radioContainer {
+            width: 80%;
             padding: 1rem;
             border: $light-purple 5px solid;
             border-radius: 1rem;
             margin: 1rem;
 
             display: flex;
+            align-items: center;
             justify-content: space-between;
 
+            p {
+                margin: 1rem;
+                text-align: center;
+            }
+
             .radioButton {
-                display: block;
                 width: 5rem;
-                height: 5rem;
-                background: pink;
+                height: 3rem;
+
+                border: solid black 2px;
+                border-radius: 5px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             :checked + label {
-                background: black;
+                background: $light-purple;
             }
 
-            .radioButton:active {
-                background: blue;
+            input {
+                display: none;
             }
         }
 

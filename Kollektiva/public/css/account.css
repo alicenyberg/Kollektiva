@@ -165,24 +165,33 @@ body {
   color: transparent;
 }
 .createAccount .steps .radioContainer {
+  width: 80%;
   padding: 1rem;
   border: #c8c7ff 5px solid;
   border-radius: 1rem;
   margin: 1rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
+.createAccount .steps .radioContainer p {
+  margin: 1rem;
+  text-align: center;
+}
 .createAccount .steps .radioContainer .radioButton {
-  display: block;
   width: 5rem;
-  height: 5rem;
-  background: pink;
+  height: 3rem;
+  border: solid black 2px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .createAccount .steps .radioContainer :checked + label {
-  background: black;
+  background: #c8c7ff;
 }
-.createAccount .steps .radioContainer .radioButton:active {
-  background: blue;
+.createAccount .steps .radioContainer input {
+  display: none;
 }
 .createAccount .steps .pageNav {
   width: 50%;

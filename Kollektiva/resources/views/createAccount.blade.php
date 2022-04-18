@@ -19,45 +19,62 @@
 
             <div class="radioContainer">
                 <div>
-                    <input id="smokingNo" type="radio" name="smoking" value="false">
-                    <label class="radioButton" for="smokingNo"></label>
-                    <p>Nej</p>
+                    <input id="smokingYes" type="radio" name="smoking" value="true">
+                    <label class="radioButton" for="smokingYes">
+
+                        <p>Ja</p>
+                    </label>
                 </div>
 
                 <p>Somking?</p>
 
                 <div>
-                    <input type="radio" name="smoking" value="true">
-                    <p>Ja</p>
+                    <input id="smokingNo" type="radio" name="smoking" value="false">
+                    <label class="radioButton" for="smokingNo">
+                        <p>Nej</p>
+                    </label>
                 </div>
+
             </div>
 
-            <div>
+            <div class="radioContainer">
                 <div>
-                    <input type="radio" name="animals" value="false">
-                    <p>Nej</p>
+                    <input id="animalsYes" type="radio" name="animals" value="true">
+                    <label class="radioButton" for="animalsYes">
+
+                        <p>Ja</p>
+                    </label>
                 </div>
 
-                <p>Animals?</p>
+                <p>Är hus djur tillåtna?</p>
 
                 <div>
-                    <input type="radio" name="animals" value="true">
-                    <p>Ja</p>
+                    <input id="animalsNo" type="radio" name="animals" value="false">
+                    <label class="radioButton" for="animalsNo">
+                        <p>Nej</p>
+                    </label>
                 </div>
+
             </div>
 
-            <div>
+            <div class="radioContainer">
                 <div>
-                    <input type="radio" name="partying" value="false">
-                    <p>Nej</p>
+                    <input id="partyingYes" type="radio" name="partying" value="true">
+                    <label class="radioButton" for="partyingYes">
+
+                        <p>Ja</p>
+                    </label>
                 </div>
 
                 <p>Partying?</p>
 
                 <div>
-                    <input type="radio" name="partying" value="true">
-                    <p>Ja</p>
+                    <input id="partyingNo" type="radio" name="partying" value="false">
+                    <label class="radioButton" for="partyingNo">
+                        <p>Nej</p>
+                    </label>
                 </div>
+
             </div>
             <button class="next" type="button">Next</button>
         </div>
