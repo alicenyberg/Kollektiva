@@ -15,33 +15,12 @@
     <form action="createResidence" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="steps">
-            <h2>Berätta lite om bostaden</h2>
-            <div class="rangeContainer">
-                <h3 class="rangeMeter">0</h3>
-                <input class="range" id="slider" type="range" value="0" min="0" max="100" name="squaremeters">
-            </div>
-            <div class="rangeContainer">
-                <input class="range" type="range" name="rent">
-            </div>
-
-            <!--
-                <input type="text" name="name">
-                <input type="number" name="rooms">
-            <input type="number" name="residents">
-            <input type="number" name="bathrooms"> -->
-
-            <button class="next" type="button">Next</button>
-        </div>
-
-    <div class="steps">
-
-
-
             <h1>Steg 3</h1>
 
             <div class="radioContainer">
                 <div>
-                    <input type="radio" name="smoking" value="false">
+                    <input id="smokingNo" type="radio" name="smoking" value="false">
+                    <label class="radioButton" for="smokingNo"></label>
                     <p>Nej</p>
                 </div>
 
@@ -80,6 +59,25 @@
                     <p>Ja</p>
                 </div>
             </div>
+            <button class="next" type="button">Next</button>
+        </div>
+
+        <div class="steps">
+            <h2>Berätta lite om bostaden</h2>
+            <div class="rangeContainer">
+                <h3 class="rangeMeter">0</h3>
+                <input class="range" id="slider" type="range" value="0" min="0" max="100" name="squaremeters">
+            </div>
+            <div class="rangeContainer">
+                <input class="range" type="range" name="rent">
+            </div>
+
+            <!--
+                <input type="text" name="name">
+                <input type="number" name="rooms">
+            <input type="number" name="residents">
+            <input type="number" name="bathrooms"> -->
+
             <button class="next" type="button">Next</button>
         </div>
 

@@ -172,6 +172,18 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.createAccount .steps .radioContainer .radioButton {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background: pink;
+}
+.createAccount .steps .radioContainer :checked + label {
+  background: black;
+}
+.createAccount .steps .radioContainer .radioButton:active {
+  background: blue;
+}
 .createAccount .steps .pageNav {
   width: 50%;
   display: flex;
