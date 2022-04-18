@@ -165,7 +165,7 @@ body {
   color: transparent;
 }
 .createAccount .steps .radioContainer {
-  width: 80%;
+  width: 90%;
   padding: 1rem;
   border: #c8c7ff 5px solid;
   border-radius: 1rem;
@@ -173,10 +173,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 .createAccount .steps .radioContainer p {
   margin: 1rem;
   text-align: center;
+}
+.createAccount .steps .radioContainer section {
+  display: flex;
+}
+.createAccount .steps .radioContainer section .radioButton {
+  width: 3rem;
+  margin: 0.1rem;
 }
 .createAccount .steps .radioContainer .radioButton {
   width: 5rem;

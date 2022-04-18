@@ -15,6 +15,52 @@
     <form action="createResidence" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="steps">
+        <div class="radioContainer">
+            <p>Hur många rum finns det?</p>
+
+            <section>
+                <?php for ($i=1; $i < 7; $i++): ?>
+                    <input id="<?= "rooms" . $i ?>" type="radio" name="rooms" value="<?= $i ?>">
+                    <label class="radioButton" for="<?= "rooms" . $i ?>">
+                        <p>
+                            <?php
+                                if ($i == 6) {
+                                    echo "$i +";
+                                } else {
+                                    echo $i;
+                                }
+                            ?>
+                        </p>
+                    </label>
+                <?php endfor; ?>
+            </section>
+        </div>
+
+        <div class="radioContainer">
+            <p>Hur många rum kan bo där?</p>
+
+            <section>
+                <?php for ($i=1; $i < 7; $i++): ?>
+                    <input id="<?= "rooms" . $i ?>" type="radio" name="rooms" value="<?= $i ?>">
+                    <label class="radioButton" for="<?= "rooms" . $i ?>">
+                        <p>
+                            <?php
+                                if ($i == 6) {
+                                    echo "$i +";
+                                } else {
+                                    echo $i;
+                                }
+                            ?>
+                        </p>
+                    </label>
+                <?php endfor; ?>
+            </section>
+        </div>
+        <button class="next" type="button">Next</button>
+    </div>
+
+
+    <div class="steps">
             <h1>Steg 3</h1>
 
             <div class="radioContainer">

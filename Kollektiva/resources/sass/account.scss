@@ -108,7 +108,7 @@
         }
 
         .radioContainer {
-            width: 80%;
+            width: 90%;
             padding: 1rem;
             border: $light-purple 5px solid;
             border-radius: 1rem;
@@ -117,10 +117,20 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-direction: column;
 
             p {
                 margin: 1rem;
                 text-align: center;
+            }
+
+            section {
+                display: flex;
+
+                .radioButton {
+                    width: 3rem;
+                    margin: 0.1rem;
+                }
             }
 
             .radioButton {
