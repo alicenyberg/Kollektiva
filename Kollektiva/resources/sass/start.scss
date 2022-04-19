@@ -1,11 +1,17 @@
 @import "app";
 
 h1 {
-    color: $primary-purple;
+    color: black;
     font-family: $primary-font;
     margin-top: 0;
     padding-top: 10%;
     padding-left: 4%;
+}
+
+.hero-section {
+    background-image: url("/images/start.jpeg");
+    height: 40rem;
+    background-repeat: no-repeat;
 }
 
 .nav-container {
@@ -28,8 +34,8 @@ p {
 }
 
 button {
-    background-color: $primary-purple;
-    color: white;
+    background-color: $light-purple;
+    color: black;
     font-family: $primary-font;
     font-size: $button-font-size;
     padding: 10px;
@@ -63,6 +69,10 @@ button {
             display: flex;
             flex-direction: column;
 
+            @media (min-width: 600px) {
+                transform: rotate(90deg);
+            }
+
             .circle {
                 width: 55px;
                 height: 55px;
@@ -70,6 +80,9 @@ button {
                 border-radius: 100px;
                 position: relative;
                 margin: 0 auto 0 auto;
+
+                @media (min-width: 600px) {
+                }
             }
 
             h3 {
@@ -80,6 +93,25 @@ button {
                 transform: translate(-50%, -50%);
                 margin: 0;
                 color: #fff;
+
+                @media (min-width: 600px) {
+                    display: none;
+                }
+            }
+
+            .hide {
+                display: none;
+
+                @media (min-width: 600px) {
+                    position: absolute;
+                    font-size: 2rem;
+                    color: white;
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(270deg);
+                    margin: 0;
+                }
             }
 
             .vertical-line {
@@ -87,6 +119,10 @@ button {
                 height: 60px;
                 background: $light-purple;
                 margin: 0 auto 0 auto;
+
+                @media (min-width: 600px) {
+                    height: 120px;
+                }
             }
         }
 
@@ -96,6 +132,10 @@ button {
             flex-wrap: wrap;
             justify-content: space-between;
             width: 66%;
+
+            @media (min-width: 600px) {
+                width: 20%;
+            }
         }
     }
 
@@ -126,15 +166,15 @@ button {
         justify-content: center;
         align-items: center;
         border: 1px solid rgba(78, 78, 78, 0.212);
+
         @media (min-width: 600px) {
             width: 30%;
             padding: 0.5rem;
             margin: 5rem;
-
             box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.156);
             border-radius: 1rem;
-
             display: flex;
+
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -160,7 +200,7 @@ button {
 // footer
 
 footer {
-    height: 30rem;
+    height: 40rem;
     background-color: $light-purple;
     display: grid;
     align-items: center;
@@ -170,7 +210,7 @@ footer {
     }
 
     .wrapper {
-        height: 20rem;
+        height: 30rem;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         justify-items: center;
@@ -187,6 +227,7 @@ footer {
 
         .box-1 {
             text-align: center;
+            padding: 5%;
 
             @media (min-width: 600px) {
                 text-align: left;
@@ -195,6 +236,8 @@ footer {
         .box-2 {
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
+            padding: 5%;
+            text-align: center;
 
             @media (min-width: 600px) {
                 text-align: left;
@@ -203,6 +246,8 @@ footer {
 
         .box-2 a {
             color: black;
+            font-size: $p-font-size;
+            padding: 2px;
         }
         .box-2 a:hover {
             color: grey;
@@ -210,6 +255,13 @@ footer {
 
         .box-3 {
             justify-items: center;
+            padding: 5%;
         }
+    }
+
+    button {
+        background-color: white;
+        color: $primary-purple;
+        font-weight: bolder;
     }
 }

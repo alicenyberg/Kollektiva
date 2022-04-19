@@ -6,9 +6,9 @@
             <p>info@kollektiva.se</p>
         </div>
         <div class="box-2">
-            <a href="#">MENY 1</a>
-            <a href="#">MENY 2</a>
-            <a href="#">MENY 3</a>
+            <a href="#">Sök bostad</a>
+            <a href="#">Bli hyresvärd</a>
+            <a href="#">Hjälp</a>
         </div>
         <div class="box-3">
             <button type="button">Logga in</button>
