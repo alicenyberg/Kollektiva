@@ -2176,12 +2176,11 @@ displayCurrent.innerHTML = currentStep;
 var stepCount = 0;
 steps.forEach(function (step) {
   step.dataset.step = stepCount;
+  steps[stepCount].style.display = "none";
   stepCount++;
-  console.log(step.dataset.step);
+  console.log(stepCount);
 });
-steps[1].style.display = "none";
-steps[2].style.display = "none";
-steps[3].style.display = "none";
+steps[0].style.display = "flex";
 var pageCounter = 1;
 pageCounts[0].style.background = "#4e0ea1";
 pageCounts.forEach(function (page) {

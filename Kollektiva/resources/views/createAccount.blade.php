@@ -14,6 +14,19 @@
     </div>
     <form action="createResidence" method="POST" enctype="multipart/form-data">
     @csrf
+
+    <div class="steps">
+            @if($errors->any())
+            {{$errors->first()}}
+            @endif
+            <p>uwu</p>
+            <input type="text" name="name">
+
+            <input type="file" name="image">
+
+            <button class="next" type="button">Next</button>
+        </div>
+
     <div class="steps">
         <div class="radioContainer">
             <p>Hur många rum finns det?</p>
@@ -62,6 +75,7 @@
 
     <div class="steps">
             <h1>Steg 3</h1>
+
 
             <div class="radioContainer">
                 <div>
@@ -166,14 +180,9 @@
             </div>
         </div>
 
-    <div class="steps">
-        @if($errors->any())
-        {{$errors->first()}}
-        @endif
-        <input type="file" name="picture">
-    </div>
 
 
+        <button type="submit"></button>
 
     </form>
 </section>
