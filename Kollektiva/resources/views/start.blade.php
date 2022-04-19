@@ -40,10 +40,26 @@
         <div class="residence-container">
             <img src="https://momsgotthestuff.com/wp-content/uploads/2021/02/minecraft-house-1.jpg" alt="">
             <h4>Tellgrensgatan 3A</h4>
-
-
             <ul>
-                <li>Yta" 300 m</li>
+                <li>Yta: 300 m</li>
+                <li>Antal rum: 3 st</li>
+                <li>Hyra: 30 000 kr</li>
+            </ul>
+        </div>
+        <div class="residence-container">
+            <img src="https://momsgotthestuff.com/wp-content/uploads/2021/02/minecraft-house-1.jpg" alt="">
+            <h4>Tellgrensgatan 3A</h4>
+            <ul>
+                <li>Yta: 300 m</li>
+                <li>Antal rum: 3 st</li>
+                <li>Hyra: 30 000 kr</li>
+            </ul>
+        </div>
+        <div class="residence-container">
+            <img src="https://momsgotthestuff.com/wp-content/uploads/2021/02/minecraft-house-1.jpg" alt="">
+            <h4>Tellgrensgatan 3A</h4>
+            <ul>
+                <li>Yta: 300 m</li>
                 <li>Antal rum: 3 st</li>
                 <li>Hyra: 30 000 kr</li>
             </ul>
