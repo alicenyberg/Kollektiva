@@ -72,11 +72,17 @@ body {
 }
 
 h1 {
-  color: #4e0ea1;
+  color: black;
   font-family: "Poppins";
   margin-top: 0;
   padding-top: 10%;
   padding-left: 4%;
+}
+
+.hero-section {
+  background-image: url("/images/start.jpeg");
+  height: 40rem;
+  background-repeat: no-repeat;
 }
 
 .nav-container {
@@ -94,13 +100,13 @@ h2 {
 
 p {
   font-family: "Poppins";
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-left: 2%;
 }
 
 button {
-  background-color: #4e0ea1;
-  color: white;
+  background-color: #c8c7ff;
+  color: black;
   font-family: "Poppins";
   font-size: 1.2rem;
   padding: 10px;
@@ -131,6 +137,11 @@ button {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 600px) {
+  .how-to-section .how-to .how-to-wrapper {
+    transform: rotate(90deg);
+  }
+}
 .how-to-section .how-to .how-to-wrapper .circle {
   width: 55px;
   height: 55px;
@@ -148,11 +159,36 @@ button {
   margin: 0;
   color: #fff;
 }
+@media (min-width: 600px) {
+  .how-to-section .how-to .how-to-wrapper h3 {
+    display: none;
+  }
+}
+.how-to-section .how-to .how-to-wrapper .hide {
+  display: none;
+}
+@media (min-width: 600px) {
+  .how-to-section .how-to .how-to-wrapper .hide {
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    margin: 0;
+  }
+}
 .how-to-section .how-to .how-to-wrapper .vertical-line {
   width: 2px;
   height: 60px;
   background: #c8c7ff;
   margin: 0 auto 0 auto;
+}
+@media (min-width: 600px) {
+  .how-to-section .how-to .how-to-wrapper .vertical-line {
+    height: 120px;
+  }
 }
 .how-to-section .how-to .how-to-steps {
   display: flex;
@@ -160,6 +196,11 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 66%;
+}
+@media (min-width: 600px) {
+  .how-to-section .how-to .how-to-steps {
+    width: 20%;
+  }
 }
 .how-to-section .register-now {
   display: flex;
@@ -215,7 +256,7 @@ button {
 }
 
 footer {
-  height: 30rem;
+  height: 40rem;
   background-color: #c8c7ff;
   display: grid;
   align-items: center;
@@ -226,7 +267,7 @@ footer {
   }
 }
 footer .wrapper {
-  height: 20rem;
+  height: 30rem;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
@@ -244,6 +285,7 @@ footer .wrapper {
 }
 footer .wrapper .box-1 {
   text-align: center;
+  padding: 5%;
 }
 @media (min-width: 600px) {
   footer .wrapper .box-1 {
@@ -253,6 +295,8 @@ footer .wrapper .box-1 {
 footer .wrapper .box-2 {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  padding: 5%;
+  text-align: center;
 }
 @media (min-width: 600px) {
   footer .wrapper .box-2 {
@@ -261,10 +305,18 @@ footer .wrapper .box-2 {
 }
 footer .wrapper .box-2 a {
   color: black;
+  font-size: 1.2rem;
+  padding: 2px;
 }
 footer .wrapper .box-2 a:hover {
   color: grey;
 }
 footer .wrapper .box-3 {
   justify-items: center;
+  padding: 5%;
+}
+footer button {
+  background-color: white;
+  color: #4e0ea1;
+  font-weight: bolder;
 }

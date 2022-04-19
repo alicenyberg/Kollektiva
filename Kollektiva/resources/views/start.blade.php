@@ -1,12 +1,12 @@
 @include('/boilerplate/header')
 
 <div>
-    <div>
+    <div class="hero-section">
         <h2>Rubrik osv</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis accumsan, tellus dui, consectetur pretium.</p>
         <button>Jag vill hyra ut</button>
         <button>Jag söker bostad</button>
-        <img src="{{url('/images/start.jpeg')}}" alt="Image" />
+        <!-- <img class="hero" src="{{url('/images/start.jpeg')}}" alt="Image" /> -->
     </div>
     <section class="how-to-section">
         <h2>Hur gör man?</h2>
@@ -14,14 +14,17 @@
             <div class="how-to-wrapper">
                 <div class="circle">
                     <h3>1</h3>
+                    <h4 class="hide">3</h4>
                 </div>
                 <div class="vertical-line"></div>
                 <div class="circle">
                     <h3>2</h3>
+                    <h4 class="hide">2</h4>
                 </div>
                 <div class="vertical-line"></div>
                 <div class="circle">
                     <h3>3</h3>
+                    <h4 class="hide">1</h4>
                 </div>
             </div>
             <div class="how-to-steps">

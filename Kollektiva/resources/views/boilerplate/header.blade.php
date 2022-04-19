@@ -12,9 +12,9 @@
 </head>
 
 <body>
-
     <div class="menu">
         <nav class="navbar">
+
             <div class="hamburger">
                 <div class="hamburger-line .hamburger-line-1"></div>
                 <div class="hamburger-line .hamburger-line-2"></div>
