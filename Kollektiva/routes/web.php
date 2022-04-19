@@ -29,5 +29,10 @@ Route::get('/start', function () {
     return view('start');
 });
 
+//Dashboard
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
 Route::post('/createResidence', CreateResidenceController::class);
 //Route::post('/stepThree', StepThreeController::class);

@@ -30,14 +30,15 @@ class CreateResidenceController extends Controller
         $residence->animals = $request->input('animals');
         $residence->partying = $request->input('partying');
 
-        $residence->picture = $request->image->getClientOriginalName();
 
         $pictureName = time().'.'.$request->image->getClientOriginalName();
         $request->image->move(public_path('uploads'), $pictureName);
 
+        $residence->picture = $pictureName;
+
         $residence->save();
 
 
-        return back();
+        return view('dashboard');
     }
 }
