@@ -2,14 +2,14 @@
 
 <div>
     <div class="hero-section">
-        <h2>Rubrik osv</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis accumsan, tellus dui, consectetur pretium.</p>
+        <h2>Välkommen till Kollektiva</h2>
+        <p>Hyr ut din bostad tryggt och enkelt. För dig som är 55+!</p>
         <button>Jag vill hyra ut</button>
         <button>Jag söker bostad</button>
         <!-- <img class="hero" src="{{url('/images/start.jpeg')}}" alt="Image" /> -->
     </div>
     <section class="how-to-section">
-        <h2>Hur gör man?</h2>
+        <h2>Hur funkar det?</h2>
         <div class="how-to">
             <div class="how-to-wrapper">
                 <div class="circle">
@@ -28,9 +28,10 @@
                 </div>
             </div>
             <div class="how-to-steps">
-                <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+                <p>Genomgå Kollektivas guidade väg till annonsering.</p>
+                <p>Kollektiva matchar sedan ihop dig med passande hyresgäst.</p>
+                <p>Din hyresgäst betalar hyran via Kollektiva, som sedan betalar dig.
+                </p>
             </div>
 
         </div>
