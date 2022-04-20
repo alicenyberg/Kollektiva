@@ -44,7 +44,7 @@ body {
 .hamburger {
   height: 25px;
   width: 30px;
-  top: 30px;
+  top: 20px;
   right: 50px;
   position: fixed;
   cursor: pointer;
@@ -74,25 +74,25 @@ body {
 h1 {
   color: black;
   font-family: "Poppins";
-  margin-top: 0;
-  padding-top: 3rem;
-  padding-left: 4%;
 }
 
 .hero-section {
   background-image: url("/images/hero-mobile.png");
-  height: 60rem;
+  height: 50rem;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
+  background-size: cover;
 }
 @media (min-width: 600px) {
   .hero-section {
     background-image: url("/images/hero-desktop.png");
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
     background-size: contain;
+    height: 40rem;
   }
 }
 .hero-section h2 {
@@ -100,28 +100,59 @@ h1 {
   font-size: 28px;
   text-align: left;
   padding-top: 2rem;
-  padding-left: 1rem;
+  margin-left: 1.4rem;
 }
 .hero-section p {
   font-family: "Poppins";
   font-size: 1.2rem;
-  padding-left: 1rem;
+  margin-left: 1.4rem;
   text-align: left;
   padding-bottom: 8%;
+}
+@media (min-width: 600px) {
+  .hero-section .hero-button {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: start;
+    margin-left: 1rem;
+  }
+}
+.hero-section .hero-button button {
+  background-color: #c8c7ff;
+  color: black;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 12px;
+  border: none;
+  width: 15rem;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .hero-section .hero-button button {
+    background-color: #c8c7ff;
+    color: black;
+    font-family: "Poppins";
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 12px;
+    border: none;
+    margin-right: 1rem;
+  }
+}
+.hero-section .hero-button button:hover {
+  box-shadow: 0px 3px 6px rgba(47, 47, 47, 0.6);
+}
+.hero-section .hero-button button:active {
+  transform: scale(0.98);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p {
   font-family: "Poppins";
   font-size: 1.2rem;
-}
-
-.nav-container {
-  height: 4rem;
-  background-color: white;
-  position: relative;
-  display: flex;
-  align-items: center;
-  box-shadow: 1px black;
 }
 
 button {
@@ -138,18 +169,39 @@ button {
   display: grid;
   grid-row-start: 1;
   margin-left: 2%;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0px 3px 6px rgba(47, 47, 47, 0.6);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .how-to-section {
   height: 100vh;
+}
+@media (min-width: 600px) {
+  .how-to-section {
+    height: 100vh;
+  }
 }
 .how-to-section .how-to {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 5rem;
   margin-bottom: 5rem;
+}
+@media (min-width: 600px) {
+  .how-to-section .how-to {
+    flex-direction: column;
+    position: absolute;
+    left: 20rem;
+  }
 }
 .how-to-section .how-to .how-to-wrapper {
   width: auto;
@@ -207,7 +259,7 @@ button {
 }
 @media (min-width: 600px) {
   .how-to-section .how-to .how-to-wrapper .vertical-line {
-    height: 120px;
+    height: 160px;
   }
 }
 .how-to-section .how-to .how-to-steps {
@@ -219,7 +271,33 @@ button {
 }
 @media (min-width: 600px) {
   .how-to-section .how-to .how-to-steps {
-    width: 20%;
+    width: 40%;
+    display: none;
+  }
+}
+.how-to-section .how-to .how-to-desktop {
+  display: none;
+}
+@media (min-width: 600px) {
+  .how-to-section .how-to .how-to-desktop {
+    display: block;
+    display: flex;
+    height: 20rem;
+    position: absolute;
+    left: 0;
+  }
+}
+@media (min-width: 600px) {
+  .how-to-section .how-to .desktop-steps {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+  }
+}
+@media (min-width: 600px) {
+  .how-to-section .how-to .desktop-steps-2 {
+    display: flex;
+    position: absolute;
   }
 }
 .how-to-section .register-now {
@@ -228,11 +306,21 @@ button {
   align-items: center;
   flex-direction: column;
 }
+@media (min-width: 600px) {
+  .how-to-section .register-now {
+    align-items: flex-end;
+  }
+}
 .how-to-section h2 {
   font-family: "Poppins";
   font-size: 35px;
   padding-top: 2rem;
   text-align: center;
+}
+@media (min-width: 600px) {
+  .how-to-section h2 {
+    z-index: -1;
+  }
 }
 .how-to-section p {
   font-family: "Poppins";

@@ -3,24 +3,23 @@
 h1 {
     color: black;
     font-family: $primary-font;
-    margin-top: 0;
-    padding-top: 3rem;
-    padding-left: 4%;
 }
 
 .hero-section {
     background-image: url("/images/hero-mobile.png");
-    height: 60rem;
+    height: 50rem;
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
+    background-size: cover;
 
     @media (min-width: 600px) {
         background-image: url("/images/hero-desktop.png");
         background-repeat: no-repeat;
         width: 100vw;
-        height: 100vh;
-        position: absolute;
+        position: sticky;
         background-size: contain;
+        height: 40rem;
     }
 
     h2 {
@@ -28,15 +27,58 @@ h1 {
         font-size: 28px;
         text-align: left;
         padding-top: 2rem;
-        padding-left: 1rem;
+        margin-left: 1.4rem;
     }
 
     p {
         font-family: $primary-font;
         font-size: $p-font-size;
-        padding-left: 1rem;
+        margin-left: 1.4rem;
         text-align: left;
         padding-bottom: 8%;
+    }
+
+    .hero-button {
+        @media (min-width: 600px) {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: start;
+            margin-left: 1rem;
+        }
+
+        button {
+            background-color: $light-purple;
+            color: black;
+            font-family: $primary-font;
+            font-size: $button-font-size;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 12px;
+            border: none;
+            width: 15rem;
+            cursor: pointer;
+
+            @media (min-width: 600px) {
+                background-color: $light-purple;
+                color: black;
+                font-family: $primary-font;
+                font-size: $button-font-size;
+                padding: 10px;
+                text-decoration: none;
+                border-radius: 12px;
+                border: none;
+                margin-right: 1rem;
+            }
+        }
+
+        button:hover {
+            box-shadow: 0px 3px 6px rgba(47, 47, 47, 0.6);
+        }
+
+        button:active {
+            transform: scale(0.98);
+            box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
     }
 }
 
@@ -45,14 +87,14 @@ p {
     font-size: $p-font-size;
 }
 
-.nav-container {
-    height: 4rem;
-    background-color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    box-shadow: 1px black;
-}
+// .nav-container {
+//     height: 4rem;
+//     background-color: white;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     box-shadow: 1px black;
+// }
 
 button {
     background-color: $light-purple;
@@ -69,6 +111,16 @@ button {
     display: grid;
     grid-row-start: 1;
     margin-left: 2%;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 3px 6px rgba(47, 47, 47, 0.6);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 // start section 2
@@ -76,13 +128,22 @@ button {
 .how-to-section {
     height: 100vh;
 
+    @media (min-width: 600px) {
+        height: 100vh;
+    }
+
     .how-to {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin-top: 5rem;
         margin-bottom: 5rem;
+
+        @media (min-width: 600px) {
+            flex-direction: column;
+            position: absolute;
+            left: 20rem;
+        }
 
         .how-to-wrapper {
             width: auto;
@@ -142,7 +203,7 @@ button {
                 margin: 0 auto 0 auto;
 
                 @media (min-width: 600px) {
-                    height: 120px;
+                    height: 160px;
                 }
             }
         }
@@ -155,7 +216,35 @@ button {
             width: 66%;
 
             @media (min-width: 600px) {
-                width: 20%;
+                width: 40%;
+                display: none;
+            }
+        }
+        .how-to-desktop {
+            display: none;
+
+            @media (min-width: 600px) {
+                display: block;
+                display: flex;
+                height: 20rem;
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        .desktop-steps {
+            @media (min-width: 600px) {
+                display: flex;
+                // width: 50%;
+                flex-wrap: nowrap;
+                position: absolute;
+            }
+        }
+
+        .desktop-steps-2 {
+            @media (min-width: 600px) {
+                display: flex;
+                position: absolute;
             }
         }
     }
@@ -165,6 +254,10 @@ button {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        @media (min-width: 600px) {
+            align-items: flex-end;
+        }
     }
 
     h2 {
@@ -172,6 +265,10 @@ button {
         font-size: 35px;
         padding-top: 2rem;
         text-align: center;
+
+        @media (min-width: 600px) {
+            z-index: -1;
+        }
     }
 
     p {
