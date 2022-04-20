@@ -149,6 +149,10 @@
             justify-content: space-between;
             flex-direction: column;
 
+            .question {
+                margin: 1rem;
+            }
+
             p {
                 text-align: center;
             }

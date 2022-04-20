@@ -58,19 +58,36 @@ hamburgerIcon.addEventListener("click", () => {
     console.log("hellio");
 });
 
-// input range
+// input range - squaremeter
 
-const inputRange = document.getElementById("slider");
-const rangeMeter = document.querySelector(".rangeMeter");
+const inputRangeMeter = document.getElementById("slider-squaremeter");
+const rangeMeter = document.querySelector(".rangeMeter-squaremeter");
 
-rangeMeter.textContent = inputRange.value;
+rangeMeter.textContent = inputRangeMeter.value;
 
-inputRange.textContent = "kvm";
-inputRange.addEventListener("input", () => {
-    rangeMeter.textContent = inputRange.value + " kvm";
-    console.log(inputRange.value);
+inputRangeMeter.textContent = "kvm";
+inputRangeMeter.addEventListener("input", () => {
+    rangeMeter.textContent = inputRangeMeter.value + " kvm";
+    console.log(inputRangeMeter.value);
 
-    if (inputRange.value >= 100) {
+    if (inputRangeMeter.value >= 100) {
         rangeMeter.textContent = "100+ kvm";
+    }
+});
+
+// input range - rent
+
+const inputRangeRent = document.getElementById("slider-rent");
+const rangeRent = document.querySelector(".rangeMeter-rent");
+
+rangeRent.textContent = inputRangeRent.value;
+
+inputRangeRent.textContent = "0 kr";
+inputRangeRent.addEventListener("input", () => {
+    rangeRent.textContent = inputRangeRent.value + " kr";
+    console.log(inputRangeRent.value);
+
+    if (inputRangeRent.value >= 3000) {
+        rangeRent.textContent = "3000 +" + " kr";
     }
 });

@@ -16,27 +16,33 @@
     @csrf
 
     <div class="steps">
-        @if($errors->any())
-        {{$errors->first()}}
-        @endif
-        <div class="inputContainer">
-            <h2>Address</h2>
-            <input type="text" name="name">
+            <h2>Börja med att registrera ditt konto genom verifiering av BankID. </h2>
+            <div class="bankContianer">
+                <img src="https://play-lh.googleusercontent.com/bD-qaxBMpWE-o5zM6Hd151pMrW7E_PIHxudRg-k7ty48pdspjzzbsSiiyDy4oUK0nvw" alt="">
+                <button>Öppna BankID</button>
+            </div>
+
+            <!-- <div class="pageNav">
+                <div>
+                    <button type="button" class="back">
+                        <img src="{{ asset('assets/svg/Vector.svg') }}">
+                    </button>
+                    <p>Föregående</p>
+                </div>
+                <div>
+                    <button class="next" type="button">
+                        <img src="{{ asset('assets/svg/Vector.svg') }}">
+                    </button>
+                    <p>Nästa</p>
+                </div>
+            </div> -->
+
+            <button class="next" type="button">Next</button>
         </div>
 
-        <div class="inputContainer">
-            <h2>Bilder</h2>
-            <input id="image" type="file" name="image">
-            <label for="image"></label>
-            <img src="{{url('/images/image-icon.svg')}}" alt="" />
-        </div>
-
-
-        <button class="next" type="button">Next</button>
-    </div>
     <div class="steps">
         <div class="radioContainer">
-            <p>Hur många rum finns det?</p>
+            <p class="question">Hur många rum finns det?</p>
 
             <section>
                 <?php for ($i=1; $i < 7; $i++): ?>
@@ -57,7 +63,7 @@
         </div>
 
         <div class="radioContainer">
-            <p>Hur många kan bo där?</p>
+            <p class="question">Hur många kan bo där?</p>
 
             <section>
                 <?php for ($i=1; $i < 7; $i++): ?>
@@ -85,112 +91,107 @@
 
 
             <div class="radioContainer">
-                <div>
-                    <input id="smokingYes" type="radio" name="smoking" value="true">
-                    <label class="radioButton" for="smokingYes">
 
-                        <p>Ja</p>
-                    </label>
-                </div>
+                <p class="question">Somking?</p>
 
-                <p>Somking?</p>
 
-                <div>
-                    <input id="smokingNo" type="radio" name="smoking" value="false">
-                    <label class="radioButton" for="smokingNo">
-                        <p>Nej</p>
-                    </label>
-                </div>
+                <section>
+                    <div>
+                        <input id="smokingYes" type="radio" name="smoking" value="true">
+                        <label class="radioButton" for="smokingYes">
 
-            </div>
-
-            <div class="radioContainer">
-                <div>
-                    <input id="animalsYes" type="radio" name="animals" value="true">
-                    <label class="radioButton" for="animalsYes">
-
-                        <p>Ja</p>
-                    </label>
-                </div>
-
-                <p>Är hus djur tillåtna?</p>
-
-                <div>
-                    <input id="animalsNo" type="radio" name="animals" value="false">
-                    <label class="radioButton" for="animalsNo">
-                        <p>Nej</p>
-                    </label>
-                </div>
+                            <p>Ja</p>
+                        </label>
+                    </div>
+                    <div>
+                        <input id="smokingNo" type="radio" name="smoking" value="false">
+                        <label class="radioButton" for="smokingNo">
+                            <p>Nej</p>
+                        </label>
+                    </div>
+                </section>
 
             </div>
 
             <div class="radioContainer">
-                <div>
-                    <input id="partyingYes" type="radio" name="partying" value="true">
-                    <label class="radioButton" for="partyingYes">
+                <p class="question">Är hus djur tillåtna?</p>
+                <section>
+                    <div>
+                        <input id="animalsYes" type="radio" name="animals" value="true">
+                        <label class="radioButton" for="animalsYes">
 
-                        <p>Ja</p>
-                    </label>
-                </div>
+                            <p>Ja</p>
+                        </label>
+                    </div>
 
-                <p>Partying?</p>
 
-                <div>
-                    <input id="partyingNo" type="radio" name="partying" value="false">
-                    <label class="radioButton" for="partyingNo">
-                        <p>Nej</p>
-                    </label>
-                </div>
+                    <div>
+                        <input id="animalsNo" type="radio" name="animals" value="false">
+                        <label class="radioButton" for="animalsNo">
+                            <p>Nej</p>
+                        </label>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="radioContainer">
+                <p class="question">Partying?</p>
+                <section>
+
+                    <div>
+                        <input id="partyingYes" type="radio" name="partying" value="true">
+                        <label class="radioButton" for="partyingYes">
+                            <p>Ja</p>
+                        </label>
+                    </div>
+                    <div>
+                        <input id="partyingNo" type="radio" name="partying" value="false">
+                        <label class="radioButton" for="partyingNo">
+                            <p>Nej</p>
+                        </label>
+                    </div>
+                </section>
 
             </div>
             <button class="next" type="button">Next</button>
         </div>
 
         <div class="steps">
-            <h2>Hur många <b>kvm</b> är bodstaden?</h2>
+            <h3>Hur många <b>kvm</b> är bodstaden?</h3>
             <div class="rangeContainer">
-                <h3 class="rangeMeter">0</h3>
-                <input class="range" id="slider" type="range" value="0" min="0" max="100" name="squaremeters">
+                <h3 class="rangeMeter-squaremeter">0</h3>
+                <input class="range" id="slider-squaremeter" type="range" value="0" min="0" max="100" step="5" name="squaremeters">
             </div>
-            <h2>Din avsatta <b>hyra</b> för bostaden?</h2>
+            <h3>Din avsatta <b>hyra</b> för bostaden?</h3>
             <div class="rangeContainer">
-                <input class="range" type="range" name="rent">
+                <h3 class="rangeMeter-rent">0</h3>
+                <input class="range" id="slider-rent" type="range" value="0" min="0" max="3000" step="50" name="rent">
             </div>
-
-            <!--
-                <input type="text" name="name">
-                <input type="number" name="rooms">
-            <input type="number" name="residents">
-            <input type="number" name="bathrooms"> -->
 
             <button class="next" type="button">Next</button>
         </div>
 
         <div class="steps">
-            <h2>Börja med att registrera ditt konto genom verifiering av BankID. </h2>
-            <div class="bankContianer">
-                <img src="https://play-lh.googleusercontent.com/bD-qaxBMpWE-o5zM6Hd151pMrW7E_PIHxudRg-k7ty48pdspjzzbsSiiyDy4oUK0nvw" alt="">
-                <button>Öppna BankID</button>
-            </div>
-            <div class="pageNav">
-                <div>
-                    <button type="button" class="back">
-                        <img src="{{ asset('assets/svg/Vector.svg') }}">
-                    </button>
-                    <p>Föregående</p>
-                </div>
-                <div>
-                    <button class="next" type="button">
-                        <img src="{{ asset('assets/svg/Vector.svg') }}">
-                    </button>
-                    <p>Nästa</p>
-                </div>
-            </div>
+        @if($errors->any())
+        {{$errors->first()}}
+        @endif
+        <div class="inputContainer">
+            <h2>Address</h2>
+            <input type="text" name="name">
+        </div>
+
+        <div class="inputContainer">
+            <h2>Bilder</h2>
+            <input id="image" type="file" name="image">
+            <label for="image"></label>
+            <img src="{{url('/images/image-icon.svg')}}" alt="" />
         </div>
 
 
+        <button type="submit">Klart</button>
+    </div>
 
-        <button type="submit"></button>
 
     </form>
 </section>
