@@ -16,7 +16,6 @@
         <!-- <img class="logo" src="{{url('images/logo.png')}}" alt="Logo" />
         <h1>Kollektiva.se</h1> -->
         <nav class="navbar">
-
             <div class="hamburger">
                 <div class="hamburger-line .hamburger-line-1"></div>
                 <div class="hamburger-line .hamburger-line-2"></div>
