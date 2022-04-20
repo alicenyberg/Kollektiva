@@ -24,16 +24,20 @@ h1 {
 
     h2 {
         font-family: $primary-font;
-        font-size: 28px;
+        font-size: 34px;
         text-align: left;
         padding-top: 2rem;
         margin-left: 1.4rem;
+
+        @media (min-width: 600px) {
+            font-size: 50px;
+        }
     }
 
     p {
         font-family: $primary-font;
         font-size: $p-font-size;
-        margin-left: 1.4rem;
+        margin-left: 1.6rem;
         text-align: left;
         padding-bottom: 8%;
     }
@@ -328,6 +332,24 @@ button:active {
 }
 
 // footer
+
+.footer-img {
+    height: 15rem;
+    width: 100%;
+    background-image: url("/images/mobile-footer.png");
+    background-repeat: no-repeat;
+    position: sticky;
+    background-size: cover;
+
+    @media (min-width: 600px) {
+        background-image: url("/images/footer-desktop.png");
+        background-repeat: no-repeat;
+        width: 100vw;
+        position: sticky;
+        background-size: cover;
+        height: 28rem;
+    }
+}
 
 footer {
     height: 40rem;

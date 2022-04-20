@@ -44,7 +44,7 @@ body {
 .hamburger {
   height: 25px;
   width: 30px;
-  top: 30px;
+  top: 20px;
   right: 50px;
   position: fixed;
   cursor: pointer;

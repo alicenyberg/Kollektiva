@@ -97,15 +97,20 @@ h1 {
 }
 .hero-section h2 {
   font-family: "Poppins";
-  font-size: 28px;
+  font-size: 34px;
   text-align: left;
   padding-top: 2rem;
   margin-left: 1.4rem;
 }
+@media (min-width: 600px) {
+  .hero-section h2 {
+    font-size: 50px;
+  }
+}
 .hero-section p {
   font-family: "Poppins";
   font-size: 1.2rem;
-  margin-left: 1.4rem;
+  margin-left: 1.6rem;
   text-align: left;
   padding-bottom: 8%;
 }
@@ -370,6 +375,27 @@ button:active {
     margin-bottom: 0.8rem;
     border-radius: 0.8rem;
     box-shadow: 0px 5px 3px 3px rgba(0, 0, 0, 0.077);
+  }
+}
+
+.footer-img {
+  height: 15rem;
+  width: 100%;
+  background-image: url("/images/mobile-footer.png");
+  background-repeat: no-repeat;
+  position: -webkit-sticky;
+  position: sticky;
+  background-size: cover;
+}
+@media (min-width: 600px) {
+  .footer-img {
+    background-image: url("/images/footer-desktop.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    position: -webkit-sticky;
+    position: sticky;
+    background-size: cover;
+    height: 28rem;
   }
 }
 

@@ -1,4 +1,6 @@
+<div class="footer-img"> </div>
 <footer>
+    <!-- <img src="{{url('/images/footer-desktop.png')}}" alt="a picture of houses and flowers" /> -->
     <div class="wrapper">
         <div class="box-1">
             <p>Kundtjänst</p>
