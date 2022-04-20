@@ -292,8 +292,12 @@ button:active {
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     grid-gap: 1rem;
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+
+    @media (max-width: 500px) {
+        grid-template: repeat(6, 1fr) / repeat(1, 1fr);
     }
 
     .residence-container {
