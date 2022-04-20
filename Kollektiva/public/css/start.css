@@ -25,6 +25,7 @@ body {
   top: 0;
   right: -300px;
   position: fixed;
+  z-index: 10;
 }
 
 .close {
@@ -359,6 +360,19 @@ button:active {
   width: 100%;
   margin-top: 8rem;
   padding: 2rem;
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+@media (max-width: 800px) {
+  .find-residence-section {
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .find-residence-section {
+    grid-template: repeat(6, 1fr)/repeat(1, 1fr);
+  }
 }
 .find-residence-section .residence-container {
   width: 100%;
@@ -375,9 +389,7 @@ button:active {
 }
 @media (min-width: 600px) {
   .find-residence-section .residence-container {
-    width: 30%;
     padding: 0.5rem;
-    margin: 5rem;
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.156);
     border-radius: 1rem;
     display: flex;
