@@ -16,6 +16,13 @@
         <!-- <img class="logo" src="{{url('images/logo.png')}}" alt="Logo" />
         <h1>Kollektiva.se</h1> -->
         <nav class="navbar">
+            <ul class="desktop-nav">
+                <li class="nav-item">Sök bostad</li>
+                <li class="nav-item">Bli hyresvärd</li>
+                <li class="nav-item">Hjälp</li>
+                <li class="nav-item">Logga in</li>
+                <li class="nav-item">Registrera dig</li>
+            </ul>
             <div class="hamburger">
                 <div class="hamburger-line .hamburger-line-1"></div>
                 <div class="hamburger-line .hamburger-line-2"></div>
