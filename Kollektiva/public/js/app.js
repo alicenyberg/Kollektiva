@@ -2211,18 +2211,18 @@ var navBar = document.querySelector(".navbar");
 hamburgerIcon.addEventListener("click", function () {
   navBar.classList.toggle("close");
   console.log("hellio");
-}); //input
+}); // input range
 
 var inputRange = document.getElementById("slider");
 var rangeMeter = document.querySelector(".rangeMeter");
 rangeMeter.textContent = inputRange.value;
-inputRange.textContent = "uwu";
+inputRange.textContent = "kvm";
 inputRange.addEventListener("input", function () {
-  rangeMeter.textContent = inputRange.value;
+  rangeMeter.textContent = inputRange.value + " kvm";
   console.log(inputRange.value);
 
   if (inputRange.value >= 100) {
-    rangeMeter.textContent = "100+ max";
+    rangeMeter.textContent = "100+ kvm";
   }
 });
 

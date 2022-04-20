@@ -16,17 +16,24 @@
     @csrf
 
     <div class="steps">
-            @if($errors->any())
-            {{$errors->first()}}
-            @endif
-            <p>uwu</p>
+        @if($errors->any())
+        {{$errors->first()}}
+        @endif
+        <div class="inputContainer">
+            <h2>Address</h2>
             <input type="text" name="name">
-
-            <input type="file" name="image">
-
-            <button class="next" type="button">Next</button>
         </div>
 
+        <div class="inputContainer">
+            <h2>Bilder</h2>
+            <input id="image" type="file" name="image">
+            <label for="image"></label>
+            <img src="{{url('/images/image-icon.svg')}}" alt="" />
+        </div>
+
+
+        <button class="next" type="button">Next</button>
+    </div>
     <div class="steps">
         <div class="radioContainer">
             <p>Hur många rum finns det?</p>
@@ -140,11 +147,12 @@
         </div>
 
         <div class="steps">
-            <h2>Berätta lite om bostaden</h2>
+            <h2>Hur många <b>kvm</b> är bodstaden?</h2>
             <div class="rangeContainer">
                 <h3 class="rangeMeter">0</h3>
                 <input class="range" id="slider" type="range" value="0" min="0" max="100" name="squaremeters">
             </div>
+            <h2>Din avsatta <b>hyra</b> för bostaden?</h2>
             <div class="rangeContainer">
                 <input class="range" type="range" name="rent">
             </div>

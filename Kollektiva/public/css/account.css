@@ -128,6 +128,30 @@ body {
   width: 80%;
   text-align: center;
 }
+.createAccount .steps .inputContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.createAccount .steps .inputContainer #image {
+  display: none;
+}
+.createAccount .steps .inputContainer label {
+  width: 10rem;
+  height: 10rem;
+  background: #4e0ea1;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.createAccount .steps .inputContainer img {
+  position: absolute;
+  top: 4.5rem;
+  width: 6rem;
+  cursor: pointer;
+}
 .createAccount .steps .rangeContainer {
   padding: 1rem;
   border: #c8c7ff 5px solid;
@@ -176,7 +200,6 @@ body {
   flex-direction: column;
 }
 .createAccount .steps .radioContainer p {
-  margin: 1rem;
   text-align: center;
 }
 .createAccount .steps .radioContainer section {

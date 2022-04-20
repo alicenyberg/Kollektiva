@@ -58,19 +58,19 @@ hamburgerIcon.addEventListener("click", () => {
     console.log("hellio");
 });
 
-//input
+// input range
 
 const inputRange = document.getElementById("slider");
 const rangeMeter = document.querySelector(".rangeMeter");
 
 rangeMeter.textContent = inputRange.value;
 
-inputRange.textContent = "uwu";
+inputRange.textContent = "kvm";
 inputRange.addEventListener("input", () => {
-    rangeMeter.textContent = inputRange.value;
+    rangeMeter.textContent = inputRange.value + " kvm";
     console.log(inputRange.value);
 
     if (inputRange.value >= 100) {
-        rangeMeter.textContent = "100+ max";
+        rangeMeter.textContent = "100+ kvm";
     }
 });
