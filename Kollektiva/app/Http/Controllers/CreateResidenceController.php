@@ -39,6 +39,6 @@ class CreateResidenceController extends Controller
         $residence->save();
 
 
-        return view('dashboard');
+        return view('accountdone');
     }
 }

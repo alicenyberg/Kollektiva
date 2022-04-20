@@ -1,0 +1,18 @@
+.sectionDone {
+    height: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: done 3s;
+}
+
+@keyframes done {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}

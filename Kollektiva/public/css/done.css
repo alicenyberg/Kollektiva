@@ -1,0 +1,27 @@
+.sectionDone {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: done 3s;
+          animation: done 3s;
+}
+
+@-webkit-keyframes done {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes done {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}

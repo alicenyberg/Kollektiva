@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/start.css">
     <link rel="stylesheet" href="/css/account.css">
+    <link rel="stylesheet" href="/css/done.css">
 </head>
 
 <body>

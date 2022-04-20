@@ -25,7 +25,8 @@ mix.js("resources/js/app.js", "public/js").sass(
     "public/css"
 );
 
+mix.js("resources/js/hamburger.js", "public/js");
+
 mix.sass("resources/sass/start.scss", "public/css");
 mix.sass("resources/sass/account.scss", "public/css");
-
-mix.js("resources/js/hamburger.js", "public/js");
+mix.sass("resources/sass/done.scss", "public/css");
