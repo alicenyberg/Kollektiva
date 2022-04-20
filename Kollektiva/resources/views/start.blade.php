@@ -5,7 +5,9 @@
         <h2>Välkommen till Kollektiva</h2>
         <p>Hyr ut din bostad tryggt och enkelt. För dig som är 55+!</p>
         <div class="hero-button">
-            <button>Jag vill hyra ut</button>
+            <form action="/account" method="GET">
+                <button>Jag vill hyra ut</button>
+            </form>
             <button>Jag söker bostad</button>
         </div>
         <!-- <img class="hero" src="{{url('/images/start.jpeg')}}" alt="Image" /> -->
