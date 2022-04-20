@@ -80,6 +80,6 @@
     </section>
 </div>
 
-
+<script src="/js/hamburger.js"></script>
 
 @include('/boilerplate/footer')
