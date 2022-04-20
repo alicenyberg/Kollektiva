@@ -288,6 +288,14 @@ button:active {
     margin-top: 8rem;
     padding: 2rem;
 
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    @media (max-width: 600px) {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+
     .residence-container {
         width: 100%;
         padding: 0.5rem;
@@ -302,9 +310,7 @@ button:active {
         border: 1px solid rgba(78, 78, 78, 0.212);
 
         @media (min-width: 600px) {
-            width: 30%;
             padding: 0.5rem;
-            margin: 5rem;
             box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.156);
             border-radius: 1rem;
             display: flex;
