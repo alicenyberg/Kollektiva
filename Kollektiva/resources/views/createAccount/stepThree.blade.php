@@ -7,7 +7,7 @@
             <input type="radio" name="smoking" value="false">
             <p>Nej</p>
         </div>
-        <p>Somking?</p>
+        <p>Smoking?</p>
         <div>
             <input type="radio" name="smoking" value="true">
             <p>Ja</p>

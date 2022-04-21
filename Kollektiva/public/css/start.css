@@ -163,6 +163,7 @@ body {
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
+  box-shadow: inset 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 600px) {
   .hero-section {
@@ -183,6 +184,11 @@ body {
     position: -webkit-sticky;
     position: sticky;
     background-size: contain;
+    height: 30rem;
+  }
+}
+@media (min-width: 1439px) {
+  .hero-section {
     height: 38rem;
   }
 }
@@ -455,6 +461,22 @@ button:active {
     align-items: flex-end;
   }
 }
+.how-to-section .register-now button {
+  margin-top: 2rem;
+}
+@media (min-width: 1020px) {
+  .how-to-section .register-now button {
+    position: absolute;
+    top: 70rem;
+    left: 24rem;
+  }
+}
+@media (min-width: 1439px) {
+  .how-to-section .register-now button {
+    top: 78rem;
+    left: 36rem;
+  }
+}
 @media (min-width: 1020px) {
   .how-to-section .register-now .register-now-img {
     margin-top: 2rem;
@@ -471,6 +493,7 @@ button:active {
   font-family: "Poppins";
   font-size: 35px;
   padding-top: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 @media (min-width: 600px) {
@@ -483,9 +506,28 @@ button:active {
   font-size: 1.2rem;
 }
 
+.find-residence-font {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 12rem;
+}
+@media (min-width: 600px) {
+  .find-residence-font {
+    margin-top: 20rem;
+  }
+}
+@media (min-width: 1020px) {
+  .find-residence-font {
+    margin-top: 6rem;
+  }
+}
+
 .find-residence-section {
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 3rem;
   padding: 2rem;
   display: grid;
   grid-template: repeat(3, 1fr)/repeat(3, 1fr);
@@ -503,7 +545,7 @@ button:active {
 }
 @media (min-width: 600px) {
   .find-residence-section {
-    margin-top: 15rem;
+    margin-top: 3rem;
   }
 }
 @media (min-width: 1020px) {

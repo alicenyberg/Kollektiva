@@ -64,14 +64,14 @@
     // die(var_dump($residence->getOriginal()));
 
     ?>
-
+    <h2 class="find-residence-font">Hitta din framtida bostad idag!</h2>
     <section class="find-residence-section">
         <?php foreach ($residence as $resi) : ?>
             <div class="residence-container">
                 <img src="{{url('/uploads/' . $resi->image)}}" alt="">
                 <h4><?= $resi->name ?></h4>
                 <ul>
-                    <li>Yta: <?= $resi->squaremeters ?> m</li>
+                    <li>Yta: <?= $resi->squaremeters ?> kvm</li>
                     <li>Antal rum: <?= $resi->rooms ?> st</li>
                     <li>Hyra: <?= $resi->rent ?> kr</li>
                 </ul>

@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
+    box-shadow: inset 1px 2px 0px rgba(0, 0, 0, 0.2);
 
     @media (min-width: 600px) {
         background-image: url("/images/hero-desktop.png");
@@ -23,6 +24,10 @@
         width: 100vw;
         position: sticky;
         background-size: contain;
+        height: 30rem;
+    }
+
+    @media (min-width: 1439px) {
         height: 38rem;
     }
 
@@ -302,6 +307,18 @@ button:active {
         }
 
         button {
+            margin-top: 2rem;
+
+            @media (min-width: 1020px) {
+                position: absolute;
+                top: 70rem;
+                left: 24rem;
+            }
+
+            @media (min-width: 1439px) {
+                top: 78rem;
+                left: 36rem;
+            }
         }
 
         .register-now-img {
@@ -321,6 +338,7 @@ button:active {
         font-family: $primary-font;
         font-size: 35px;
         padding-top: 2rem;
+        margin-bottom: 1rem;
         text-align: center;
 
         @media (min-width: 600px) {
@@ -336,9 +354,26 @@ button:active {
 
 // residence-cards
 
+.find-residence-font {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12rem;
+
+    @media (min-width: 600px) {
+        margin-top: 20rem;
+    }
+
+    @media (min-width: 1020px) {
+        margin-top: 6rem;
+    }
+}
+
 .find-residence-section {
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 3rem;
     padding: 2rem;
 
     display: grid;
@@ -354,7 +389,7 @@ button:active {
     }
 
     @media (min-width: 600px) {
-        margin-top: 15rem;
+        margin-top: 3rem;
     }
 
     @media (min-width: 1020px) {
