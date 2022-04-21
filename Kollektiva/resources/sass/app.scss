@@ -123,6 +123,16 @@ body {
         border: 1px solid $primary-purple;
         margin-top: 1%;
     }
+
+    li {
+        cursor: pointer;
+        color: $black;
+    }
+
+    li:hover {
+        font-weight: bolder;
+        color: black;
+    }
 }
 
 .nav-item {

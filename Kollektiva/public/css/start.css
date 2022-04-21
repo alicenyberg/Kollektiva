@@ -109,6 +109,14 @@ body {
   border: 1px solid #4e0ea1;
   margin-top: 1%;
 }
+.nav-list li {
+  cursor: pointer;
+  color: #2f2f2f;
+}
+.nav-list li:hover {
+  font-weight: bolder;
+  color: black;
+}
 
 .nav-item {
   margin: 1rem;
@@ -202,7 +210,7 @@ body {
   font-size: 34px;
   text-align: left;
   padding-top: 2rem;
-  margin-left: 1.4rem;
+  margin-left: 1.5rem;
 }
 @media (min-width: 600px) {
   .hero-section h2 {
@@ -218,7 +226,7 @@ body {
   font-family: "Poppins";
   font-size: 28px;
   text-align: left;
-  margin-left: 1.4rem;
+  margin-left: 1.5rem;
   padding-bottom: 1rem;
 }
 @media (min-width: 600px) {
@@ -234,7 +242,8 @@ body {
 .hero-section p {
   font-family: "Poppins";
   font-size: 1.2rem;
-  margin-left: 1.6rem;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
   text-align: left;
 }
 @media (min-width: 600px) {
@@ -249,6 +258,11 @@ body {
     justify-content: start;
     margin-left: 1rem;
     width: 35rem;
+  }
+}
+@media (min-width: 1439px) {
+  .hero-section .hero-button {
+    margin-top: 2rem;
   }
 }
 .hero-section .hero-button button {

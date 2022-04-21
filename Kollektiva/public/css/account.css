@@ -109,6 +109,14 @@ body {
   border: 1px solid #4e0ea1;
   margin-top: 1%;
 }
+.nav-list li {
+  cursor: pointer;
+  color: #2f2f2f;
+}
+.nav-list li:hover {
+  font-weight: bolder;
+  color: black;
+}
 
 .nav-item {
   margin: 1rem;
