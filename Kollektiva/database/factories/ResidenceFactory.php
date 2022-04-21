@@ -20,16 +20,20 @@ class ResidenceFactory extends Factory
 
         $booleans = ['true', 'false'];
         $houseImage = [
-            'house1',
-            'house2',
-            'house3',
-            'house4',
-            'house5',
-            'house6',
-            'house7',
-            'house8',
-            'house9'
+            'house1.png',
+            'house2.png',
+            'house3.png',
+            'house4.png',
         ];
+        /*
+            Wont us for now 😖
+            'house5.png',
+            'house6.png',
+            'house7.png',
+            'house8.png',
+            'house9.png',
+        */
+
         $houseName = [
             'Blåhusgatan 8F',
             'Grönagatan 10A',

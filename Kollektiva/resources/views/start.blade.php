@@ -99,7 +99,7 @@ $residence = Residence::all();
 <section class="find-residence-section">
     <?php foreach ($residence as $resi) : ?>
         <div class="residence-container">
-            <img src="{{url('/uploads/' . $resi->picture)}}" alt="">
+            <img src="{{url('/uploads/' . $resi->image)}}" alt="">
             <h4><?= $resi->name ?></h4>
             <ul>
                 <li>Yta: 300 m</li>
