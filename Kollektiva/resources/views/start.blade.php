@@ -49,7 +49,7 @@
         <div class="register-now">
             <picture>
                 <source srcset="/images/how-to.png" media="(min-width: 600px)">
-                <img class="register-now-img" src="/images/how-to-mobile.png" alt="" />
+                <img class="register-now-img" src="/images/how-to-mobile.png" alt="a girl looking at a map" />
             </picture>
             <button>Registrera dig nu</button>
         </div>

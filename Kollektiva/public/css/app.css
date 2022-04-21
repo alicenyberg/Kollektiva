@@ -37,6 +37,11 @@ body {
   margin-right: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
+  color: #2f2f2f;
+}
+.menu .desktop-nav li:hover {
+  font-weight: bolder;
+  color: black;
 }
 .menu .logo {
   padding: 10px;

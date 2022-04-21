@@ -1,5 +1,6 @@
 @import "app";
 
+// hero section styling
 .hero-section {
     background-image: url("/images/hero-mobile.png");
     height: 60rem;
@@ -149,7 +150,7 @@ button:active {
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-// start section 2
+// how to section 2 styling
 
 .how-to-section {
     height: 100vh;
@@ -231,9 +232,6 @@ button:active {
                 background: $light-purple;
                 margin: 0 auto 0 auto;
 
-                // @media (min-width: 600px) {
-                //     height: 130px;
-                // }
                 @media (min-width: 1020px) {
                     height: 160px;
                 }
@@ -252,6 +250,7 @@ button:active {
                 display: none;
             }
         }
+
         .how-to-desktop {
             display: none;
 
@@ -336,12 +335,14 @@ button:active {
 
     h2 {
         font-family: $primary-font;
+        color: $primary-purple;
         font-size: 35px;
         padding-top: 2rem;
         margin-bottom: 1rem;
         text-align: center;
 
         @media (min-width: 600px) {
+            font-size: 40px;
             z-index: -1;
         }
     }
@@ -352,10 +353,11 @@ button:active {
     }
 }
 
-// residence-cards
+// residence-cards styling
 
 .find-residence-font {
     font-size: 35px;
+    color: $primary-purple;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -368,6 +370,7 @@ button:active {
 
     @media (min-width: 1020px) {
         margin-top: 6rem;
+        font-size: 40px;
     }
 }
 
