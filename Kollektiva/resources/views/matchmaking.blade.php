@@ -1,8 +1,4 @@
-@include('/boilerplate/header')@include('/boilerplate/header')
-<section class="sectionDone">
-    <h2>Dessa är de ansökande</h2>
-
-    <?php
+<?php
 
 use App\Models\Residence;
 use App\Models\User;
@@ -13,10 +9,14 @@ $users = User::all();
 
 ?>
 
+@include('/boilerplate/header')@include('/boilerplate/header')
+
 <section class="matchmakingSection">
-    <section class="find-residence-section">
-        <?php foreach ($users as $user) : ?>
-            <div class="residence-container">
+    <h2>Dessa är de ansökande</h2>
+
+        <section class="find-residence-section">
+            <?php foreach ($users as $user) : ?>
+                <div class="residence-container">
                 <img src="{{$user->image}}" alt="">
                 <h4><?= $user->name ?></h4>
                 <ul>
