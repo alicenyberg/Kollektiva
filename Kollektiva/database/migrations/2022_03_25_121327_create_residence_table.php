@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('smoking')->default(false);
             $table->string('animals')->default(false);
             $table->string('partying')->default(false);
-            $table->string('picture')->default("none");
+            $table->string('image')->default("none");
             $table->timestamps();
         });
     }
