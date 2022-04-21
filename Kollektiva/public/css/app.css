@@ -11,19 +11,20 @@ body {
 
 .menu {
   width: 100%;
-  height: 4rem;
+  height: 6rem;
   background-color: #fdfdfd;
   display: flex;
+  align-items: center;
 }
 .menu .desktop-nav {
   display: none;
 }
-@media (min-width: 600px) {
+@media (min-width: 1020px) {
   .menu .desktop-nav {
     display: block;
     color: black;
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -34,6 +35,30 @@ body {
   list-style: none;
   margin-left: 1rem;
   margin-right: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.menu .logo {
+  padding: 10px;
+}
+@media (min-width: 1020px) {
+  .menu .logo {
+    padding: 5px;
+  }
+}
+.menu h1 {
+  color: black;
+  font-family: "Poppins";
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1020px) {
+  .menu h1 {
+    font-size: 38px;
+    margin-left: 1%;
+  }
 }
 
 .navbar {
@@ -45,10 +70,10 @@ body {
   width: 400px;
   height: 100%;
   background-color: #fdfdfd;
-  top: 0;
+  top: 0rem;
   right: -400px;
   position: fixed;
-  z-index: 10;
+  z-index: 1;
 }
 
 .close {
@@ -58,7 +83,7 @@ body {
 .nav-list {
   text-align: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 1020px) {
   .nav-list {
     display: none;
   }
@@ -69,7 +94,7 @@ body {
   font-size: 25px;
   list-style: none;
 }
-@media (min-width: 600px) {
+@media (min-width: 1020px) {
   .nav-item {
     display: none;
   }
@@ -78,7 +103,7 @@ body {
 .hamburger {
   height: 25px;
   width: 30px;
-  top: 20px;
+  top: 35px;
   right: 50px;
   position: fixed;
   cursor: pointer;
@@ -86,7 +111,7 @@ body {
   justify-content: space-around;
   flex-direction: column;
 }
-@media (min-width: 600px) {
+@media (min-width: 1020px) {
   .hamburger {
     display: none;
   }
@@ -97,7 +122,7 @@ body {
   height: 3px;
   background-color: #4e0ea1;
 }
-@media (min-width: 600px) {
+@media (min-width: 1020px) {
   .hamburger-line {
     display: none;
   }
