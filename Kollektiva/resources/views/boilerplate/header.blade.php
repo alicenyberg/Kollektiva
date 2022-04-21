@@ -29,11 +29,15 @@
                 <div class="hamburger-line .hamburger-line-2"></div>
                 <div class="hamburger-line .hamburger-line-3"></div>
             </div>
+            <button>Registrera dig nu</button>
             <ul class="nav-list">
-                <li class="nav-item">MENY 1</li>
-                <li class="nav-item">MENY 2</li>
-                <li class="nav-item">MENY 3</li>
+                <li class="nav-item">Sök bostad</li>
+                <li class="nav-item">Bli hyresvärd</li>
+                <li class="nav-item">Hjälp</li>
             </ul>
+            <button>Logga in</button>
+            <p>Allmänna villkor</p>
+            <p>Cookiepolicy</p>
         </nav>
     </div>
     <script src="/js/app.js"></script>

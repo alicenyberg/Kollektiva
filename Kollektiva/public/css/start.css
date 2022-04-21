@@ -6,34 +6,49 @@
 
 body {
   font-family: "Poppins";
+  background-color: #fdfdfd;
 }
 
 .menu {
   width: 100%;
   height: 4rem;
-  background-color: #c8c7ff;
+  background-color: #fdfdfd;
   display: flex;
+}
+.menu .desktop-nav {
+  display: none;
+}
+@media (min-width: 600px) {
+  .menu .desktop-nav {
+    display: block;
+    color: black;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.menu .desktop-nav li {
+  list-style: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 400px;
   height: 100%;
-  background-color: #c8c7ff;
+  background-color: #fdfdfd;
   top: 0;
-  right: -300px;
+  right: -400px;
   position: fixed;
   z-index: 10;
-}
-.navbar .desktop-nav {
-  display: none;
-}
-@media (min-width: 600px) {
-  .navbar .desktop-nav {
-    display: block;
-  }
 }
 
 .close {
@@ -80,7 +95,7 @@ body {
 .hamburger-line {
   width: 100%;
   height: 3px;
-  background-color: red;
+  background-color: #4e0ea1;
 }
 @media (min-width: 600px) {
   .hamburger-line {
@@ -107,11 +122,12 @@ h1 {
 
 .hero-section {
   background-image: url("/images/hero-mobile.png");
-  height: 50rem;
+  height: 60rem;
   width: 100%;
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
+  box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 600px) {
   .hero-section {
@@ -444,7 +460,7 @@ button:active {
 .footer-img {
   height: 15rem;
   width: 100%;
-  background-image: url("/images/mobile-footer.png");
+  background-image: url("/images/footer-desktop.png");
   background-repeat: no-repeat;
   position: -webkit-sticky;
   position: sticky;
@@ -452,7 +468,6 @@ button:active {
 }
 @media (min-width: 600px) {
   .footer-img {
-    background-image: url("/images/footer-desktop.png");
     background-repeat: no-repeat;
     width: 100vw;
     position: -webkit-sticky;
