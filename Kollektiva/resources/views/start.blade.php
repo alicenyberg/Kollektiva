@@ -11,7 +11,6 @@
             </form>
             <button>Jag söker bostad</button>
         </div>
-        <!-- <img class="hero" src="{{url('/images/start.jpeg')}}" alt="Image" /> -->
     </div>
     <section class="how-to-section">
         <h2>Hur gör man?</h2>
@@ -50,7 +49,7 @@
         <div class="register-now">
             <picture>
                 <source srcset="/images/how-to.png" media="(min-width: 600px)">
-                <img class="register-now-img" src="/images/how-to-mobile.png" alt="" />
+                <img class="register-now-img" src="/images/how-to-mobile.png" alt="a girl looking at a map" />
             </picture>
             <button>Registrera dig nu</button>
         </div>
@@ -64,14 +63,14 @@
     // die(var_dump($residence->getOriginal()));
 
     ?>
-
+    <h2 class="find-residence-font">Hitta din framtida bostad idag!</h2>
     <section class="find-residence-section">
         <?php foreach ($residence as $resi) : ?>
             <div class="residence-container">
                 <img src="{{url('/uploads/' . $resi->image)}}" alt="">
                 <h4><?= $resi->name ?></h4>
                 <ul>
-                    <li>Yta: <?= $resi->squaremeters ?> m</li>
+                    <li>Yta: <?= $resi->squaremeters ?> kvm</li>
                     <li>Antal rum: <?= $resi->rooms ?> st</li>
                     <li>Hyra: <?= $resi->rent ?> kr</li>
                 </ul>

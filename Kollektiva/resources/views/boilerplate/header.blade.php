@@ -15,16 +15,16 @@
 
 <body>
     <div class="menu">
-        <!-- <img class="logo" src="{{url('images/logo.png')}}" alt="Logo" />
-        <h1>Kollektiva.se</h1> -->
+        <img class="logo" src="{{url('images/logo.svg')}}" alt="Logo" />
+        <h1>Kollektiva.se</h1>
+        <ul class="desktop-nav">
+            <li>Sök bostad</li>
+            <li>Bli hyresvärd</li>
+            <li>Hjälp</li>
+            <li>Logga in</li>
+            <li>Registrera dig</li>
+        </ul>
         <nav class="navbar">
-            <ul class="desktop-nav">
-                <li class="nav-item">Sök bostad</li>
-                <li class="nav-item">Bli hyresvärd</li>
-                <li class="nav-item">Hjälp</li>
-                <li class="nav-item">Logga in</li>
-                <li class="nav-item">Registrera dig</li>
-            </ul>
             <div class="hamburger">
                 <div class="hamburger-line .hamburger-line-1"></div>
                 <div class="hamburger-line .hamburger-line-2"></div>
@@ -32,9 +32,13 @@
             </div>
             <button>Registrera dig nu</button>
             <ul class="nav-list">
+                <hr>
                 <li class="nav-item">Sök bostad</li>
+                <hr>
                 <li class="nav-item">Bli hyresvärd</li>
+                <hr>
                 <li class="nav-item">Hjälp</li>
+                <hr>
             </ul>
             <button>Logga in</button>
             <p>Allmänna villkor</p>

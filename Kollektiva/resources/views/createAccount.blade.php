@@ -13,9 +13,9 @@
         </ul>
     </div>
     <form action="createResidence" method="POST" enctype="multipart/form-data">
-    @csrf
+        @csrf
 
-    <div class="steps">
+        <div class="steps">
             <h2>Börja med att registrera ditt konto genom verifiering av BankID. </h2>
             <div class="bankContianer">
                 <img src="https://play-lh.googleusercontent.com/bD-qaxBMpWE-o5zM6Hd151pMrW7E_PIHxudRg-k7ty48pdspjzzbsSiiyDy4oUK0nvw" alt="">
@@ -40,59 +40,59 @@
             <button class="next" type="button">Next</button>
         </div>
 
-    <div class="steps">
-        <div class="radioContainer">
-            <p class="question">Hur många rum finns det?</p>
+        <div class="steps">
+            <div class="radioContainer">
+                <p class="question">Hur många rum finns det?</p>
 
-            <section>
-                <?php for ($i=1; $i < 7; $i++): ?>
-                    <input id="<?= "rooms" . $i ?>" type="radio" name="rooms" value="<?= $i ?>">
-                    <label class="radioButton" for="<?= "rooms" . $i ?>">
-                        <p>
-                            <?php
+                <section>
+                    <?php for ($i = 1; $i < 7; $i++) : ?>
+                        <input id="<?= "rooms" . $i ?>" type="radio" name="rooms" value="<?= $i ?>">
+                        <label class="radioButton" for="<?= "rooms" . $i ?>">
+                            <p>
+                                <?php
                                 if ($i == 6) {
                                     echo "$i +";
                                 } else {
                                     echo $i;
                                 }
-                            ?>
-                        </p>
-                    </label>
-                <?php endfor; ?>
-            </section>
-        </div>
+                                ?>
+                            </p>
+                        </label>
+                    <?php endfor; ?>
+                </section>
+            </div>
 
-        <div class="radioContainer">
-            <p class="question">Hur många kan bo där?</p>
+            <div class="radioContainer">
+                <p class="question">Hur många kan bo där?</p>
 
-            <section>
-                <?php for ($i=1; $i < 7; $i++): ?>
-                    <input id="<?= "residents" . $i ?>" type="radio" name="residents" value="<?= $i ?>">
-                    <label class="radioButton" for="<?= "residents" . $i ?>">
-                        <p>
-                            <?php
+                <section>
+                    <?php for ($i = 1; $i < 7; $i++) : ?>
+                        <input id="<?= "residents" . $i ?>" type="radio" name="residents" value="<?= $i ?>">
+                        <label class="radioButton" for="<?= "residents" . $i ?>">
+                            <p>
+                                <?php
                                 if ($i == 6) {
                                     echo "$i +";
                                 } else {
                                     echo $i;
                                 }
-                            ?>
-                        </p>
-                    </label>
-                <?php endfor; ?>
-            </section>
+                                ?>
+                            </p>
+                        </label>
+                    <?php endfor; ?>
+                </section>
+            </div>
+            <button class="next" type="button">Next</button>
         </div>
-        <button class="next" type="button">Next</button>
-    </div>
 
 
-    <div class="steps">
+        <div class="steps">
             <h1>Steg 3</h1>
 
 
             <div class="radioContainer">
 
-                <p class="question">Somking?</p>
+                <p class="question">Smoking?</p>
 
 
                 <section>
@@ -173,24 +173,24 @@
         </div>
 
         <div class="steps">
-        @if($errors->any())
-        {{$errors->first()}}
-        @endif
-        <div class="inputContainer">
-            <h2>Address</h2>
-            <input type="text" name="name">
+            @if($errors->any())
+            {{$errors->first()}}
+            @endif
+            <div class="inputContainer">
+                <h2>Adress</h2>
+                <input type="text" name="name">
+            </div>
+
+            <div class="inputContainer">
+                <h2>Bilder</h2>
+                <input id="image" type="file" name="image">
+                <label for="image"></label>
+                <img src="{{url('/images/image-icon.svg')}}" alt="" />
+            </div>
+
+
+            <button type="submit">Klart</button>
         </div>
-
-        <div class="inputContainer">
-            <h2>Bilder</h2>
-            <input id="image" type="file" name="image">
-            <label for="image"></label>
-            <img src="{{url('/images/image-icon.svg')}}" alt="" />
-        </div>
-
-
-        <button type="submit">Klart</button>
-    </div>
 
 
     </form>

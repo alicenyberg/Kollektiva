@@ -37,6 +37,11 @@ body {
   margin-right: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
+  color: #2f2f2f;
+}
+.menu .desktop-nav li:hover {
+  font-weight: bolder;
+  color: black;
 }
 .menu .logo {
   padding: 10px;
@@ -103,6 +108,14 @@ body {
 .nav-list hr {
   border: 1px solid #4e0ea1;
   margin-top: 1%;
+}
+.nav-list li {
+  cursor: pointer;
+  color: #2f2f2f;
+}
+.nav-list li:hover {
+  font-weight: bolder;
+  color: black;
 }
 
 .nav-item {

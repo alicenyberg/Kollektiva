@@ -49,6 +49,12 @@ body {
             margin-right: 1rem;
             font-size: $p-font-size;
             cursor: pointer;
+            color: $black;
+        }
+
+        li:hover {
+            font-weight: bolder;
+            color: black;
         }
     }
 
@@ -96,15 +102,6 @@ body {
         padding: 78px;
     }
 
-    // button {
-    //     display: none;
-
-    //     @media (min-width: 600px) {
-    //         display: block;
-    //         color: black;
-    //     }
-    // }
-
     p {
         font-size: 14px;
     }
@@ -125,6 +122,16 @@ body {
     hr {
         border: 1px solid $primary-purple;
         margin-top: 1%;
+    }
+
+    li {
+        cursor: pointer;
+        color: $black;
+    }
+
+    li:hover {
+        font-weight: bolder;
+        color: black;
     }
 }
 
