@@ -8,6 +8,8 @@ $light-purple: #c8c7ff;
 $primary-font: "Poppins";
 $button-font-size: 1.2rem;
 $p-font-size: 1.2rem;
+$white: #fdfdfd;
+$black: #2f2f2f;
 
 * {
     box-sizing: border-box;
@@ -23,19 +25,22 @@ body {
     width: 100%;
     height: 4rem;
     // height: 100vh;
-    background-color: $light-purple;
+    background-color: $white;
     display: flex;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 400px;
     height: 100%;
-    background-color: $light-purple;
+    background-color: $white;
     top: 0;
-    right: -300px;
+    right: -400px;
     position: fixed;
     z-index: 10;
 
@@ -46,6 +51,15 @@ body {
             display: block;
         }
     }
+
+    // button {
+    //     display: none;
+
+    //     @media (min-width: 600px) {
+    //         display: block;
+    //         color: black;
+    //     }
+    // }
 }
 
 .close {
@@ -89,7 +103,7 @@ body {
 .hamburger-line {
     width: 100%;
     height: 3px;
-    background-color: red;
+    background-color: $primary-purple;
 
     @media (min-width: 600px) {
         display: none;
