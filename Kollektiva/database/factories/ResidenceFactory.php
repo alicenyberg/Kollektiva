@@ -24,6 +24,7 @@ class ResidenceFactory extends Factory
             'house2.png',
             'house3.png',
             'house4.png',
+            'house5.png',
         ];
         /*
             Wont us for now 😖

@@ -35,7 +35,7 @@ class CreateResidenceController extends Controller
         $pictureName = time().'.'.$request->image->getClientOriginalName();
         $request->image->move(public_path('uploads'), $pictureName);
 
-        $residence->picture = $pictureName;
+        $residence->image = $pictureName;
 
         $residence->save();
 

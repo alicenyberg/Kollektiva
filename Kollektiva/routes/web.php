@@ -26,6 +26,9 @@ Route::get('/account', function () {
 Route::get('/done', function () {
     return view('accountDone');
 });
+Route::get('/residence', function () {
+    return view('residence');
+});
 
 //start
 Route::get('/start', function () {
