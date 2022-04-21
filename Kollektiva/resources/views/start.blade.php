@@ -50,35 +50,35 @@
         <div class="register-now">
             <picture>
                 <source srcset="/images/how-to.png" media="(min-width: 600px)">
-                <img src="/images/how-to-mobile.png" alt="" />
+                <img class="register-now-img" src="/images/how-to-mobile.png" alt="" />
             </picture>
             <button>Registrera dig nu</button>
         </div>
     </section>
-<?php
+    <?php
 
-use App\Models\Residence;
+    use App\Models\Residence;
 
-$residence = Residence::all();
-// die(var_dump($residence));
-// die(var_dump($residence->getOriginal()));
+    $residence = Residence::all();
+    // die(var_dump($residence));
+    // die(var_dump($residence->getOriginal()));
 
-?>
+    ?>
 
-<section class="find-residence-section">
-    <?php foreach ($residence as $resi) : ?>
-        <div class="residence-container">
-            <img src="{{url('/uploads/' . $resi->image)}}" alt="">
-            <h4><?= $resi->name ?></h4>
-            <ul>
-                <li>Yta: <?= $resi->squaremeters ?> m</li>
-                <li>Antal rum: <?= $resi->rooms ?> st</li>
-                <li>Hyra: <?= $resi->rent ?> kr</li>
-            </ul>
-        </div>
-    <?php endforeach; ?>
-</section>
+    <section class="find-residence-section">
+        <?php foreach ($residence as $resi) : ?>
+            <div class="residence-container">
+                <img src="{{url('/uploads/' . $resi->image)}}" alt="">
+                <h4><?= $resi->name ?></h4>
+                <ul>
+                    <li>Yta: <?= $resi->squaremeters ?> m</li>
+                    <li>Antal rum: <?= $resi->rooms ?> st</li>
+                    <li>Hyra: <?= $resi->rent ?> kr</li>
+                </ul>
+            </div>
+        <?php endforeach; ?>
+    </section>
 
-<script src="/js/hamburger.js"></script>
+    <script src="/js/hamburger.js"></script>
 
-@include('/boilerplate/footer')
+    @include('/boilerplate/footer')

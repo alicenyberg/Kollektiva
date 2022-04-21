@@ -44,6 +44,7 @@ body {
 @media (min-width: 1020px) {
   .menu .logo {
     padding: 5px;
+    margin-left: 1%;
   }
 }
 .menu h1 {
@@ -64,16 +65,26 @@ body {
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: wrap;
   flex-direction: column;
   width: 400px;
   height: 100%;
   background-color: #fdfdfd;
   top: 0rem;
+  padding: 71px;
+  margin-left: 20rem;
   right: -400px;
   position: fixed;
   z-index: 1;
+}
+@media (min-width: 600px) {
+  .navbar {
+    padding: 78px;
+  }
+}
+.navbar p {
+  font-size: 14px;
 }
 
 .close {
@@ -82,11 +93,16 @@ body {
 
 .nav-list {
   text-align: center;
+  padding: 20px;
 }
 @media (min-width: 1020px) {
   .nav-list {
     display: none;
   }
+}
+.nav-list hr {
+  border: 1px solid #4e0ea1;
+  margin-top: 1%;
 }
 
 .nav-item {

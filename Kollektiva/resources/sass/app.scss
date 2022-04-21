@@ -57,6 +57,7 @@ body {
 
         @media (min-width: 1020px) {
             padding: 5px;
+            margin-left: 1%;
         }
     }
 
@@ -78,16 +79,22 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     flex-direction: column;
     width: 400px;
     height: 100%;
     background-color: $white;
     top: 0rem;
+    padding: 71px;
+    margin-left: 20rem;
     right: -400px;
     position: fixed;
     z-index: 1;
+
+    @media (min-width: 600px) {
+        padding: 78px;
+    }
 
     // button {
     //     display: none;
@@ -97,6 +104,10 @@ body {
     //         color: black;
     //     }
     // }
+
+    p {
+        font-size: 14px;
+    }
 }
 
 .close {
@@ -105,9 +116,15 @@ body {
 
 .nav-list {
     text-align: center;
+    padding: 20px;
 
     @media (min-width: 1020px) {
         display: none;
+    }
+
+    hr {
+        border: 1px solid $primary-purple;
+        margin-top: 1%;
     }
 }
 

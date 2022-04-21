@@ -44,6 +44,7 @@ body {
 @media (min-width: 1020px) {
   .menu .logo {
     padding: 5px;
+    margin-left: 1%;
   }
 }
 .menu h1 {
@@ -64,16 +65,26 @@ body {
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: wrap;
   flex-direction: column;
   width: 400px;
   height: 100%;
   background-color: #fdfdfd;
   top: 0rem;
+  padding: 71px;
+  margin-left: 20rem;
   right: -400px;
   position: fixed;
   z-index: 1;
+}
+@media (min-width: 600px) {
+  .navbar {
+    padding: 78px;
+  }
+}
+.navbar p {
+  font-size: 14px;
 }
 
 .close {
@@ -82,11 +93,16 @@ body {
 
 .nav-list {
   text-align: center;
+  padding: 20px;
 }
 @media (min-width: 1020px) {
   .nav-list {
     display: none;
   }
+}
+.nav-list hr {
+  border: 1px solid #4e0ea1;
+  margin-top: 1%;
 }
 
 .nav-item {
@@ -152,11 +168,22 @@ body {
   .hero-section {
     background-image: url("/images/hero-desktop.png");
     background-repeat: no-repeat;
+    height: 30rem;
     width: 100vw;
     position: -webkit-sticky;
     position: sticky;
     background-size: contain;
-    height: 40rem;
+  }
+}
+@media (min-width: 1020px) {
+  .hero-section {
+    background-image: url("/images/hero-desktop.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    position: -webkit-sticky;
+    position: sticky;
+    background-size: contain;
+    height: 38rem;
   }
 }
 .hero-section h2 {
@@ -223,6 +250,7 @@ body {
   border-radius: 12px;
   border: none;
   width: 15rem;
+  margin-top: 1rem;
   cursor: pointer;
 }
 @media (min-width: 600px) {
@@ -257,7 +285,6 @@ button {
   font-family: "Poppins";
   font-size: 1.2rem;
   padding: 10px;
-  margin-top: 1rem;
   text-decoration: none;
   border-radius: 12px;
   border: none;
@@ -296,7 +323,12 @@ button:active {
   .how-to-section .how-to {
     flex-direction: column;
     position: absolute;
-    left: 25rem;
+    left: 18rem;
+  }
+}
+@media (min-width: 1439px) {
+  .how-to-section .how-to {
+    left: 22rem;
   }
 }
 .how-to-section .how-to .how-to-wrapper {
@@ -421,6 +453,18 @@ button:active {
 @media (min-width: 1020px) {
   .how-to-section .register-now {
     align-items: flex-end;
+  }
+}
+@media (min-width: 1020px) {
+  .how-to-section .register-now .register-now-img {
+    margin-top: 2rem;
+    margin-right: 0rem;
+  }
+}
+@media (min-width: 1439px) {
+  .how-to-section .register-now .register-now-img {
+    margin-top: 3rem;
+    margin-right: 7rem;
   }
 }
 .how-to-section h2 {
@@ -590,4 +634,5 @@ footer button {
   background-color: white;
   color: #4e0ea1;
   font-weight: bolder;
+  margin-top: 1rem;
 }
