@@ -20,10 +20,24 @@ $users = User::all();
                 <img src="{{$user->image}}" alt="">
                 <h4><?= $user->name ?></h4>
                 <ul>
-                    <li>Yta: <?= $user->name ?> m</li>
-                    <li>Antal rum: <?= $user->rooms ?> st</li>
-                    <li>Hyra: <?= $user->rent ?> kr</li>
+                    <?php if ($user->partying  == "true"): ?>
+                            <li>Party - ✅</li>
+                        <?php else: ?>
+                            <li>Party - ❌</li>
+                    <?php endif; ?>
+                    <?php if ($user->smoking  == "true"): ?>
+                            <li>Rökning - ✅</li>
+                        <?php else: ?>
+                            <li>Rökning - ❌</li>
+                    <?php endif; ?>
+                    <?php if ($user->animals  == "true"): ?>
+                            <li>Husdjur - ✅</li>
+                        <?php else: ?>
+                            <li>Husdjur - ❌</li>
+                    <?php endif; ?>
                 </ul>
+
+                <button>Skapa kontakt</button>
             </div>
         <?php endforeach; ?>
     </section>
