@@ -48,16 +48,6 @@ buttons.forEach((button) => {
     });
 });
 
-// hamburger
-
-const hamburgerIcon = document.querySelector(".hamburger");
-const navBar = document.querySelector(".navbar");
-
-hamburgerIcon.addEventListener("click", () => {
-    navBar.classList.toggle("close");
-    console.log("hellio");
-});
-
 // input range - squaremeter
 
 const inputRangeMeter = document.getElementById("slider-squaremeter");

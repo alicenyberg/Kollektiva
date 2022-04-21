@@ -2204,13 +2204,6 @@ buttons.forEach(function (button) {
     steps[next].style.display = "flex";
     pageCounts[button.dataset.step].style.background = "#4e0ea1";
   });
-}); // hamburger
-
-var hamburgerIcon = document.querySelector(".hamburger");
-var navBar = document.querySelector(".navbar");
-hamburgerIcon.addEventListener("click", function () {
-  navBar.classList.toggle("close");
-  console.log("hellio");
 }); // input range - squaremeter
 
 var inputRangeMeter = document.getElementById("slider-squaremeter");
