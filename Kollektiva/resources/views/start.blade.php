@@ -11,7 +11,6 @@
             </form>
             <button>Jag söker bostad</button>
         </div>
-        <!-- <img class="hero" src="{{url('/images/start.jpeg')}}" alt="Image" /> -->
     </div>
     <section class="how-to-section">
         <h2>Hur gör man?</h2>
