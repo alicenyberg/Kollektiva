@@ -12,6 +12,7 @@ h1 {
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.2);
 
     @media (min-width: 600px) {
         background-image: url("/images/hero-desktop.png");
@@ -372,13 +373,13 @@ button:active {
 .footer-img {
     height: 15rem;
     width: 100%;
-    background-image: url("/images/mobile-footer.png");
+    background-image: url("/images/footer-desktop.png");
     background-repeat: no-repeat;
     position: sticky;
     background-size: cover;
 
     @media (min-width: 600px) {
-        background-image: url("/images/footer-desktop.png");
+        // background-image: url("/images/footer-desktop.png");
         background-repeat: no-repeat;
         width: 100vw;
         position: sticky;
