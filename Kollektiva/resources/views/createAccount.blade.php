@@ -92,7 +92,7 @@
 
             <div class="radioContainer">
 
-                <p class="question">Smoking?</p>
+                <p class="question">Är rökning tillåtet?</p>
 
 
                 <section>
@@ -114,7 +114,7 @@
             </div>
 
             <div class="radioContainer">
-                <p class="question">Är hus djur tillåtna?</p>
+                <p class="question">Är husdjur tillåtna?</p>
                 <section>
                     <div>
                         <input id="animalsYes" type="radio" name="animals" value="true">
@@ -136,7 +136,7 @@
             </div>
 
             <div class="radioContainer">
-                <p class="question">Partying?</p>
+                <p class="question">Är fester tillåtna?</p>
                 <section>
 
                     <div>
