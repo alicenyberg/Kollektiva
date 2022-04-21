@@ -19516,6 +19516,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/done.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/done.scss ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/matchmaking.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/matchmaking.scss ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/process/browser.js":
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
@@ -19823,7 +19849,9 @@ process.umask = function() { return 0; };
 /******/ 			"/js/app": 0,
 /******/ 			"css/account": 0,
 /******/ 			"css/start": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/app": 0,
+/******/ 			"css/matchmaking": 0,
+/******/ 			"css/done": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -19873,10 +19901,12 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/account","css/start","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/account","css/start","css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/account","css/start","css/app"], () => (__webpack_require__("./resources/sass/start.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/account","css/start","css/app"], () => (__webpack_require__("./resources/sass/account.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/account","css/start","css/app","css/matchmaking","css/done"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/account","css/start","css/app","css/matchmaking","css/done"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/account","css/start","css/app","css/matchmaking","css/done"], () => (__webpack_require__("./resources/sass/start.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/account","css/start","css/app","css/matchmaking","css/done"], () => (__webpack_require__("./resources/sass/account.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/account","css/start","css/app","css/matchmaking","css/done"], () => (__webpack_require__("./resources/sass/done.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/account","css/start","css/app","css/matchmaking","css/done"], () => (__webpack_require__("./resources/sass/matchmaking.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

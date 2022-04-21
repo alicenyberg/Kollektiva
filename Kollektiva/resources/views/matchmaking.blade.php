@@ -13,11 +13,11 @@ $users = User::all();
 
 ?>
 
-<section class="residenceSection">
+<section class="matchmakingSection">
     <section class="find-residence-section">
         <?php foreach ($users as $user) : ?>
             <div class="residence-container">
-                <img src="{{url('/uploads/' . $user->image)}}" alt="">
+                <img src="{{$user->image}}" alt="">
                 <h4><?= $user->name ?></h4>
                 <ul>
                     <li>Yta: <?= $user->name ?> m</li>

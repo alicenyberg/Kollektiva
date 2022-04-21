@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/start.css">
     <link rel="stylesheet" href="/css/account.css">
     <link rel="stylesheet" href="/css/done.css">
+    <link rel="stylesheet" href="/css/matchmaking.css">
 </head>
 
 <body>

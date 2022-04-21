@@ -1,6 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/hamburger.js": "/js/hamburger.js",
     "/css/account.css": "/css/account.css",
     "/css/start.css": "/css/start.css",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/matchmaking.css": "/css/matchmaking.css",
+    "/css/done.css": "/css/done.css"
 }
