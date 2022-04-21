@@ -12,7 +12,6 @@ h1 {
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
-    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.2);
 
     @media (min-width: 600px) {
         background-image: url("/images/hero-desktop.png");
@@ -31,6 +30,9 @@ h1 {
         margin-left: 1.4rem;
 
         @media (min-width: 600px) {
+            font-size: 30px;
+        }
+        @media (min-width: 1020px) {
             font-size: 50px;
         }
     }
@@ -43,6 +45,10 @@ h1 {
         padding-bottom: 1rem;
 
         @media (min-width: 600px) {
+            font-size: 20px;
+        }
+
+        @media (min-width: 1020px) {
             font-size: 40px;
         }
     }
@@ -52,13 +58,15 @@ h1 {
         font-size: $p-font-size;
         margin-left: 1.6rem;
         text-align: left;
-        padding-bottom: 8%;
+
+        @media (min-width: 600px) {
+            font-size: 1rem;
+        }
     }
 
     .hero-button {
         @media (min-width: 600px) {
             display: grid;
-            grid-template-rows: 1fr 1fr;
             justify-content: start;
             margin-left: 1rem;
         }
@@ -146,7 +154,7 @@ button:active {
     height: 100vh;
 
     @media (min-width: 600px) {
-        height: 100vh;
+        height: 40rem;
     }
 
     .how-to {
@@ -156,7 +164,7 @@ button:active {
         justify-content: space-evenly;
         margin-bottom: 5rem;
 
-        @media (min-width: 600px) {
+        @media (min-width: 1020px) {
             flex-direction: column;
             position: absolute;
             left: 25rem;
@@ -168,7 +176,7 @@ button:active {
             display: flex;
             flex-direction: column;
 
-            @media (min-width: 600px) {
+            @media (min-width: 1020px) {
                 transform: rotate(90deg);
             }
 
@@ -193,7 +201,7 @@ button:active {
                 margin: 0;
                 color: #fff;
 
-                @media (min-width: 600px) {
+                @media (min-width: 1020px) {
                     display: none;
                 }
             }
@@ -201,7 +209,7 @@ button:active {
             .hide {
                 display: none;
 
-                @media (min-width: 600px) {
+                @media (min-width: 1020px) {
                     position: absolute;
                     font-size: 2rem;
                     color: white;
@@ -219,7 +227,10 @@ button:active {
                 background: $light-purple;
                 margin: 0 auto 0 auto;
 
-                @media (min-width: 600px) {
+                // @media (min-width: 600px) {
+                //     height: 130px;
+                // }
+                @media (min-width: 1020px) {
                     height: 160px;
                 }
             }
@@ -232,7 +243,7 @@ button:active {
             justify-content: space-between;
             width: 66%;
 
-            @media (min-width: 600px) {
+            @media (min-width: 1020px) {
                 width: 40%;
                 display: none;
             }
@@ -240,7 +251,7 @@ button:active {
         .how-to-desktop {
             display: none;
 
-            @media (min-width: 600px) {
+            @media (min-width: 1020px) {
                 display: block;
                 display: flex;
                 height: 20rem;
@@ -249,7 +260,7 @@ button:active {
         }
 
         .desktop-steps {
-            @media (min-width: 600px) {
+            @media (min-width: 1020px) {
                 display: flex;
                 width: 35rem;
                 justify-content: space-between;
@@ -261,7 +272,7 @@ button:active {
         }
 
         .desktop-steps-2 {
-            @media (min-width: 600px) {
+            @media (min-width: 1020px) {
                 display: flex;
                 width: 15rem;
                 position: absolute;
@@ -271,7 +282,7 @@ button:active {
         }
 
         .right-text {
-            @media (min-width: 600px) {
+            @media (min-width: 1020px) {
                 margin-left: 19rem;
             }
         }
@@ -284,6 +295,10 @@ button:active {
         flex-direction: column;
 
         @media (min-width: 600px) {
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 1020px) {
             align-items: flex-end;
         }
 
@@ -327,6 +342,14 @@ button:active {
         grid-template: repeat(6, 1fr) / repeat(1, 1fr);
     }
 
+    @media (min-width: 600px) {
+        margin-top: 15rem;
+    }
+
+    @media (min-width: 1020px) {
+        margin-top: 5rem;
+    }
+
     .residence-container {
         width: 100%;
         padding: 0.5rem;
@@ -345,7 +368,6 @@ button:active {
             box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.156);
             border-radius: 1rem;
             display: flex;
-
             flex-direction: column;
             justify-content: center;
             align-items: center;
