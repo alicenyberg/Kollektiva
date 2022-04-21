@@ -1,29 +1,25 @@
+.matchmakingSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .matchmakingSection .find-residence-section {
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 2rem;
   padding: 2rem;
   display: grid;
-  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-template: repeat(1, 1fr)/repeat(3, 1fr);
   grid-gap: 1rem;
 }
 @media (max-width: 800px) {
   .matchmakingSection .find-residence-section {
-    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
   }
 }
 @media (max-width: 500px) {
   .matchmakingSection .find-residence-section {
-    grid-template: repeat(6, 1fr)/repeat(1, 1fr);
-  }
-}
-@media (min-width: 600px) {
-  .matchmakingSection .find-residence-section {
-    margin-top: 15rem;
-  }
-}
-@media (min-width: 1020px) {
-  .matchmakingSection .find-residence-section {
-    margin-top: 5rem;
+    grid-template: repeat(1, 1fr)/repeat(1, 1fr);
   }
 }
 .matchmakingSection .find-residence-section .residence-container {
@@ -49,6 +45,9 @@
     justify-content: center;
     align-items: center;
   }
+}
+.matchmakingSection .find-residence-section .residence-container .residence-container.favorite {
+  background: blue;
 }
 .matchmakingSection .find-residence-section .residence-container img {
   width: 100%;
