@@ -17,9 +17,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('smoking')->default(false);
+            $table->string('animals')->default(false);
+            $table->string('partying')->default(false);
+            $table->string('image')->default("none");
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            // $table->string('password');
+            // $table->rememberToken();
             $table->timestamps();
         });
     }
