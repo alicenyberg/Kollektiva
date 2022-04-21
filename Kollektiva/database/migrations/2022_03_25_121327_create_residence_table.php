@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('squaremeters');
             $table->integer('rooms');
+            $table->integer('rent');
             //$table->integer('bathrooms');
             $table->integer('residents');
             $table->string('smoking')->default(false);

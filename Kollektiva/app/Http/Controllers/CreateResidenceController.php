@@ -24,6 +24,7 @@ class CreateResidenceController extends Controller
         $residence->name = $request->input('name');
         $residence->squaremeters = $request->input('squaremeters');
         $residence->rooms = $request->input('rooms');
+        $residence->rent = $request->input('rent');
         //$residence->bathrooms = $request->input('bathrooms');
         $residence->residents = $request->input('residents');
         $residence->smoking = $request->input('smoking');

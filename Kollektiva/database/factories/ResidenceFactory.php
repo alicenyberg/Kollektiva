@@ -51,6 +51,7 @@ class ResidenceFactory extends Factory
             'squaremeters' => $this->faker->numberBetween(20, 70),
             'rooms' => $this->faker->numberBetween(2, 8),
             'residents' => $this->faker->numberBetween(2, 8),
+            'rent' => $this->faker->numberBetween(2000, 10000),
             'smoking' => $this->faker->randomElement($booleans),
             'animals' => $this->faker->randomElement($booleans),
             'partying' => $this->faker->randomElement($booleans),

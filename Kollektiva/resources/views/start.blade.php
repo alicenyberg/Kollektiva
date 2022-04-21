@@ -102,9 +102,9 @@ $residence = Residence::all();
             <img src="{{url('/uploads/' . $resi->image)}}" alt="">
             <h4><?= $resi->name ?></h4>
             <ul>
-                <li>Yta: 300 m</li>
-                <li>Antal rum: 3 st</li>
-                <li>Hyra: 30 000 kr</li>
+                <li>Yta: <?= $resi->squaremeters ?> m</li>
+                <li>Antal rum: <?= $resi->rooms ?> st</li>
+                <li>Hyra: <?= $resi->rent ?> kr</li>
             </ul>
         </div>
     <?php endforeach; ?>
