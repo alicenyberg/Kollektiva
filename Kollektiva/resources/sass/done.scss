@@ -6,6 +6,10 @@
     justify-content: center;
     align-items: center;
     animation: done 3s;
+
+    button {
+        margin: 1rem;
+    }
 }
 
 @keyframes done {

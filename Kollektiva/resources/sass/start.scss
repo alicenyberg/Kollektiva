@@ -14,7 +14,6 @@
         background-image: url("/images/hero-desktop.png");
         background-repeat: no-repeat;
         height: 30rem;
-        width: 100vw;
         position: sticky;
         background-size: contain;
     }
@@ -22,7 +21,6 @@
     @media (min-width: 1020px) {
         background-image: url("/images/hero-desktop.png");
         background-repeat: no-repeat;
-        width: 100vw;
         position: sticky;
         background-size: contain;
         height: 30rem;
@@ -385,15 +383,15 @@ button:active {
     padding: 2rem;
 
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
     grid-gap: 1rem;
 
     @media (max-width: 800px) {
-        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
     }
 
     @media (max-width: 500px) {
-        grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+        grid-template: repeat(1, 1fr) / repeat(1, 1fr);
     }
 
     @media (min-width: 600px) {
@@ -456,7 +454,6 @@ button:active {
 
     @media (min-width: 600px) {
         background-repeat: no-repeat;
-        width: 100vw;
         position: sticky;
         background-size: cover;
         height: 28rem;
@@ -528,5 +525,6 @@ footer {
         color: $primary-purple;
         font-weight: bolder;
         margin-top: 1rem;
+        width: 100%;
     }
 }

@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
 }
+.matchmakingSection h2 {
+  text-align: center;
+}
 .matchmakingSection .find-residence-section {
   width: 100%;
   margin-top: 2rem;

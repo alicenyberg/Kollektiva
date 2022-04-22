@@ -7,6 +7,9 @@
   -webkit-animation: done 3s;
           animation: done 3s;
 }
+.sectionDone button {
+  margin: 1rem;
+}
 
 @-webkit-keyframes done {
   from {

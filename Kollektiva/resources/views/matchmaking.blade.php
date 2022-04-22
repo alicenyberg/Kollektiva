@@ -44,7 +44,7 @@ foreach ($users as $user) {
 //die(var_dump($scores));
 ?>
 
-@include('/boilerplate/header')@include('/boilerplate/header')
+@include('/boilerplate/header')
 
 <section class="matchmakingSection">
     <h2>Dessa ansökande har matchat dig bäst!</h2>

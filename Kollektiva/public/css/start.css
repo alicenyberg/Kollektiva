@@ -183,7 +183,6 @@ body {
     background-image: url("/images/hero-desktop.png");
     background-repeat: no-repeat;
     height: 30rem;
-    width: 100vw;
     position: -webkit-sticky;
     position: sticky;
     background-size: contain;
@@ -193,7 +192,6 @@ body {
   .hero-section {
     background-image: url("/images/hero-desktop.png");
     background-repeat: no-repeat;
-    width: 100vw;
     position: -webkit-sticky;
     position: sticky;
     background-size: contain;
@@ -553,17 +551,17 @@ button:active {
   margin-top: 3rem;
   padding: 2rem;
   display: grid;
-  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-template: repeat(1, 1fr)/repeat(3, 1fr);
   grid-gap: 1rem;
 }
 @media (max-width: 800px) {
   .find-residence-section {
-    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
   }
 }
 @media (max-width: 500px) {
   .find-residence-section {
-    grid-template: repeat(6, 1fr)/repeat(1, 1fr);
+    grid-template: repeat(1, 1fr)/repeat(1, 1fr);
   }
 }
 @media (min-width: 600px) {
@@ -627,7 +625,6 @@ button:active {
 @media (min-width: 600px) {
   .footer-img {
     background-repeat: no-repeat;
-    width: 100vw;
     position: -webkit-sticky;
     position: sticky;
     background-size: cover;
@@ -700,4 +697,5 @@ footer button {
   color: #4e0ea1;
   font-weight: bolder;
   margin-top: 1rem;
+  width: 100%;
 }
